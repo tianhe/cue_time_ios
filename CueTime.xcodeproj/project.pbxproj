@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
+		ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */; };
+		ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
+		ECA57B531921966900BC8EC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B511921966900BC8EC1 /* InfoPlist.strings */; };
+		ECA57B551921966900BC8EC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B541921966900BC8EC1 /* main.m */; };
+		ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B581921966900BC8EC1 /* JHAppDelegate.m */; };
+		ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */; };
+		ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */; };
+		ECA57B621921966900BC8EC1 /* JHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHFirstViewController.m */; };
+		ECA57B651921966900BC8EC1 /* JHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B641921966900BC8EC1 /* JHSecondViewController.m */; };
+		ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B661921966900BC8EC1 /* Images.xcassets */; };
+		ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B6D1921966900BC8EC1 /* XCTest.framework */; };
+		ECA57B6F1921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
+		ECA57B701921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
+		ECA57B781921966900BC8EC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B761921966900BC8EC1 /* InfoPlist.strings */; };
+		ECA57B7A1921966900BC8EC1 /* CueTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B791921966900BC8EC1 /* CueTimeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA57B711921966900BC8EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA57B3D1921966800BC8EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA57B441921966900BC8EC1;
+			remoteInfo = CueTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA57B451921966900BC8EC1 /* CueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA57B481921966900BC8EC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECA57B4C1921966900BC8EC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECA57B501921966900BC8EC1 /* CueTime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CueTime-Info.plist"; sourceTree = "<group>"; };
+		ECA57B521921966900BC8EC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA57B541921966900BC8EC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECA57B561921966900BC8EC1 /* CueTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CueTime-Prefix.pch"; sourceTree = "<group>"; };
+		ECA57B571921966900BC8EC1 /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
+		ECA57B581921966900BC8EC1 /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
+		ECA57B5B1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		ECA57B5E1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		ECA57B601921966900BC8EC1 /* JHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHFirstViewController.h; sourceTree = "<group>"; };
+		ECA57B611921966900BC8EC1 /* JHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHFirstViewController.m; sourceTree = "<group>"; };
+		ECA57B631921966900BC8EC1 /* JHSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHSecondViewController.h; sourceTree = "<group>"; };
+		ECA57B641921966900BC8EC1 /* JHSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHSecondViewController.m; sourceTree = "<group>"; };
+		ECA57B661921966900BC8EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECA57B6C1921966900BC8EC1 /* CueTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA57B6D1921966900BC8EC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECA57B751921966900BC8EC1 /* CueTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CueTimeTests-Info.plist"; sourceTree = "<group>"; };
+		ECA57B771921966900BC8EC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA57B791921966900BC8EC1 /* CueTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CueTimeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA57B421921966900BC8EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */,
+				ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */,
+				ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA57B691921966900BC8EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */,
+				ECA57B701921966900BC8EC1 /* UIKit.framework in Frameworks */,
+				ECA57B6F1921966900BC8EC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA57B3C1921966800BC8EC1 = {
+			isa = PBXGroup;
+			children = (
+				ECA57B4E1921966900BC8EC1 /* CueTime */,
+				ECA57B731921966900BC8EC1 /* CueTimeTests */,
+				ECA57B471921966900BC8EC1 /* Frameworks */,
+				ECA57B461921966900BC8EC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA57B461921966900BC8EC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B451921966900BC8EC1 /* CueTime.app */,
+				ECA57B6C1921966900BC8EC1 /* CueTimeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA57B471921966900BC8EC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B481921966900BC8EC1 /* Foundation.framework */,
+				ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */,
+				ECA57B4C1921966900BC8EC1 /* UIKit.framework */,
+				ECA57B6D1921966900BC8EC1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA57B4E1921966900BC8EC1 /* CueTime */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B571921966900BC8EC1 /* JHAppDelegate.h */,
+				ECA57B581921966900BC8EC1 /* JHAppDelegate.m */,
+				ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */,
+				ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */,
+				ECA57B601921966900BC8EC1 /* JHFirstViewController.h */,
+				ECA57B611921966900BC8EC1 /* JHFirstViewController.m */,
+				ECA57B631921966900BC8EC1 /* JHSecondViewController.h */,
+				ECA57B641921966900BC8EC1 /* JHSecondViewController.m */,
+				ECA57B661921966900BC8EC1 /* Images.xcassets */,
+				ECA57B4F1921966900BC8EC1 /* Supporting Files */,
+			);
+			path = CueTime;
+			sourceTree = "<group>";
+		};
+		ECA57B4F1921966900BC8EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B501921966900BC8EC1 /* CueTime-Info.plist */,
+				ECA57B511921966900BC8EC1 /* InfoPlist.strings */,
+				ECA57B541921966900BC8EC1 /* main.m */,
+				ECA57B561921966900BC8EC1 /* CueTime-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA57B731921966900BC8EC1 /* CueTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B791921966900BC8EC1 /* CueTimeTests.m */,
+				ECA57B741921966900BC8EC1 /* Supporting Files */,
+			);
+			path = CueTimeTests;
+			sourceTree = "<group>";
+		};
+		ECA57B741921966900BC8EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B751921966900BC8EC1 /* CueTimeTests-Info.plist */,
+				ECA57B761921966900BC8EC1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA57B441921966900BC8EC1 /* CueTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA57B7D1921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTime" */;
+			buildPhases = (
+				ECA57B411921966900BC8EC1 /* Sources */,
+				ECA57B421921966900BC8EC1 /* Frameworks */,
+				ECA57B431921966900BC8EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CueTime;
+			productName = CueTime;
+			productReference = ECA57B451921966900BC8EC1 /* CueTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA57B6B1921966900BC8EC1 /* CueTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA57B801921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTimeTests" */;
+			buildPhases = (
+				ECA57B681921966900BC8EC1 /* Sources */,
+				ECA57B691921966900BC8EC1 /* Frameworks */,
+				ECA57B6A1921966900BC8EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA57B721921966900BC8EC1 /* PBXTargetDependency */,
+			);
+			name = CueTimeTests;
+			productName = CueTimeTests;
+			productReference = ECA57B6C1921966900BC8EC1 /* CueTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA57B3D1921966800BC8EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = JiHeCo;
+				TargetAttributes = {
+					ECA57B6B1921966900BC8EC1 = {
+						TestTargetID = ECA57B441921966900BC8EC1;
+					};
+				};
+			};
+			buildConfigurationList = ECA57B401921966900BC8EC1 /* Build configuration list for PBXProject "CueTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA57B3C1921966800BC8EC1;
+			productRefGroup = ECA57B461921966900BC8EC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA57B441921966900BC8EC1 /* CueTime */,
+				ECA57B6B1921966900BC8EC1 /* CueTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA57B431921966900BC8EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */,
+				ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */,
+				ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */,
+				ECA57B531921966900BC8EC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA57B6A1921966900BC8EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B781921966900BC8EC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA57B411921966900BC8EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B651921966900BC8EC1 /* JHSecondViewController.m in Sources */,
+				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
+				ECA57B551921966900BC8EC1 /* main.m in Sources */,
+				ECA57B621921966900BC8EC1 /* JHFirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA57B681921966900BC8EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA57B7A1921966900BC8EC1 /* CueTimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA57B721921966900BC8EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA57B441921966900BC8EC1 /* CueTime */;
+			targetProxy = ECA57B711921966900BC8EC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA57B511921966900BC8EC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA57B521921966900BC8EC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA57B5B1921966900BC8EC1 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA57B5E1921966900BC8EC1 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA57B761921966900BC8EC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA57B771921966900BC8EC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA57B7B1921966900BC8EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA57B7C1921966900BC8EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA57B7E1921966900BC8EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
+				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECA57B7F1921966900BC8EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
+				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECA57B811921966900BC8EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CueTime.app/CueTime";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CueTimeTests/CueTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECA57B821921966900BC8EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CueTime.app/CueTime";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
+				INFOPLIST_FILE = "CueTimeTests/CueTimeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA57B401921966900BC8EC1 /* Build configuration list for PBXProject "CueTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA57B7B1921966900BC8EC1 /* Debug */,
+				ECA57B7C1921966900BC8EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA57B7D1921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA57B7E1921966900BC8EC1 /* Debug */,
+				ECA57B7F1921966900BC8EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA57B801921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA57B811921966900BC8EC1 /* Debug */,
+				ECA57B821921966900BC8EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECA57B3D1921966800BC8EC1 /* Project object */;
+}
