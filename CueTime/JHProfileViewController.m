@@ -7,6 +7,7 @@
 //
 
 #import "JHProfileViewController.h"
+#import "JHAppDelegate.h"
 
 @interface JHProfileViewController ()
 
@@ -20,10 +21,11 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)logout:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"loggedIn"];
+    JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate initiateAuthController];
 }
 
 @end
