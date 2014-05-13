@@ -11,5 +11,7 @@
 @interface JHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+- (void)initiateTabBarController;
+- (void)initiateSignupController;
+- (void)initiateAuthController;
 @end

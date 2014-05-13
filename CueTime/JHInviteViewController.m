@@ -1,18 +1,18 @@
 //
-//  JHSecondViewController.m
+//  JHFirstViewController.m
 //  CueTime
 //
 //  Created by Tian He on 5/12/14.
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import "JHSecondViewController.h"
+#import "JHInviteViewController.h"
 
-@interface JHSecondViewController ()
+@interface JHInviteViewController ()
 
 @end
 
-@implementation JHSecondViewController
+@implementation JHInviteViewController
 
 - (void)viewDidLoad
 {

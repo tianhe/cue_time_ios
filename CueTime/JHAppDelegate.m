@@ -7,12 +7,20 @@
 //
 
 #import "JHAppDelegate.h"
+#import "JHAuthenticationViewController.h"
+#import "JHSignupViewController.h"
 
 @implementation JHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"loggedIn"]) {
+        [self initiateTabBarController];
+    } else {
+        [self initiateAuthController];
+    }
+    
     return YES;
 }
 							
@@ -43,4 +51,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)initiateTabBarController{
+    UITabBarController *tabBarController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateInitialViewController];
+    self.window.rootViewController = tabBarController;
+}
+
+- (void)initiateAuthController{
+    JHAuthenticationViewController *authController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"JHAuthenticationViewController"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:authController];
+    self.window.rootViewController = navController;
+}
+
+- (void)initiateSignupController{
+    JHSignupViewController *signupController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"JHSignupViewController"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:signupController];
+    self.window.rootViewController = navController;
+}
 @end

@@ -1,5 +1,5 @@
 //
-//  JHFirstViewController.h
+//  JHProfileViewController.h
 //  CueTime
 //
 //  Created by Tian He on 5/12/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHFirstViewController : UIViewController
+@interface JHProfileViewController : UIViewController
 
 @end

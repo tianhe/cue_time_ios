@@ -1,5 +1,5 @@
 //
-//  JHSecondViewController.h
+//  JHFirstViewController.h
 //  CueTime
 //
 //  Created by Tian He on 5/12/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHSecondViewController : UIViewController
+@interface JHInviteViewController : UIViewController
 
 @end

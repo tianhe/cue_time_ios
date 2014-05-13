@@ -15,14 +15,18 @@
 		ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B581921966900BC8EC1 /* JHAppDelegate.m */; };
 		ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */; };
 		ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */; };
-		ECA57B621921966900BC8EC1 /* JHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHFirstViewController.m */; };
-		ECA57B651921966900BC8EC1 /* JHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B641921966900BC8EC1 /* JHSecondViewController.m */; };
+		ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHInviteViewController.m */; };
+		ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */; };
 		ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B661921966900BC8EC1 /* Images.xcassets */; };
 		ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B6D1921966900BC8EC1 /* XCTest.framework */; };
 		ECA57B6F1921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B701921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
 		ECA57B781921966900BC8EC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B761921966900BC8EC1 /* InfoPlist.strings */; };
 		ECA57B7A1921966900BC8EC1 /* CueTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B791921966900BC8EC1 /* CueTimeTests.m */; };
+		ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B84192197A000BC8EC1 /* JHChatViewController.m */; };
+		ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B871921983100BC8EC1 /* JHProfileViewController.m */; };
+		ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */; };
+		ECA57B8D1921CB1600BC8EC1 /* JHSignupViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +52,24 @@
 		ECA57B581921966900BC8EC1 /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
 		ECA57B5B1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		ECA57B5E1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		ECA57B601921966900BC8EC1 /* JHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHFirstViewController.h; sourceTree = "<group>"; };
-		ECA57B611921966900BC8EC1 /* JHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHFirstViewController.m; sourceTree = "<group>"; };
-		ECA57B631921966900BC8EC1 /* JHSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHSecondViewController.h; sourceTree = "<group>"; };
-		ECA57B641921966900BC8EC1 /* JHSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHSecondViewController.m; sourceTree = "<group>"; };
+		ECA57B601921966900BC8EC1 /* JHInviteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHInviteViewController.h; sourceTree = "<group>"; };
+		ECA57B611921966900BC8EC1 /* JHInviteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHInviteViewController.m; sourceTree = "<group>"; };
+		ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHChallengeViewController.h; sourceTree = "<group>"; };
+		ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHChallengeViewController.m; sourceTree = "<group>"; };
 		ECA57B661921966900BC8EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECA57B6C1921966900BC8EC1 /* CueTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA57B6D1921966900BC8EC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ECA57B751921966900BC8EC1 /* CueTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CueTimeTests-Info.plist"; sourceTree = "<group>"; };
 		ECA57B771921966900BC8EC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECA57B791921966900BC8EC1 /* CueTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CueTimeTests.m; sourceTree = "<group>"; };
+		ECA57B83192197A000BC8EC1 /* JHChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChatViewController.h; sourceTree = "<group>"; };
+		ECA57B84192197A000BC8EC1 /* JHChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChatViewController.m; sourceTree = "<group>"; };
+		ECA57B861921983100BC8EC1 /* JHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProfileViewController.h; sourceTree = "<group>"; };
+		ECA57B871921983100BC8EC1 /* JHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProfileViewController.m; sourceTree = "<group>"; };
+		ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAuthenticationViewController.h; sourceTree = "<group>"; };
+		ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAuthenticationViewController.m; sourceTree = "<group>"; };
+		ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSignupViewController.m; sourceTree = "<group>"; };
+		ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSignupViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +133,18 @@
 				ECA57B581921966900BC8EC1 /* JHAppDelegate.m */,
 				ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */,
 				ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */,
-				ECA57B601921966900BC8EC1 /* JHFirstViewController.h */,
-				ECA57B611921966900BC8EC1 /* JHFirstViewController.m */,
-				ECA57B631921966900BC8EC1 /* JHSecondViewController.h */,
-				ECA57B641921966900BC8EC1 /* JHSecondViewController.m */,
+				ECA57B601921966900BC8EC1 /* JHInviteViewController.h */,
+				ECA57B611921966900BC8EC1 /* JHInviteViewController.m */,
+				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
+				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
+				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
+				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
+				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
+				ECA57B871921983100BC8EC1 /* JHProfileViewController.m */,
+				ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */,
+				ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */,
+				ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */,
+				ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */,
 				ECA57B661921966900BC8EC1 /* Images.xcassets */,
 				ECA57B4F1921966900BC8EC1 /* Supporting Files */,
 			);
@@ -237,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA57B8D1921CB1600BC8EC1 /* JHSignupViewController.m in Resources */,
 				ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */,
 				ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */,
 				ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */,
@@ -259,10 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA57B651921966900BC8EC1 /* JHSecondViewController.m in Sources */,
+				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
+				ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */,
+				ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */,
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
+				ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
-				ECA57B621921966900BC8EC1 /* JHFirstViewController.m in Sources */,
+				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
