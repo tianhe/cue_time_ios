@@ -18,7 +18,7 @@
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"loggedIn"]) {
         [self initiateTabBarController];
     } else {
-        [self initiateAuthController];
+        [self initiateSignupController];
     }
     
     return YES;
@@ -59,12 +59,14 @@
 - (void)initiateAuthController{
     JHAuthenticationViewController *authController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"JHAuthenticationViewController"];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:authController];
+    navController.navigationBarHidden = YES;
     self.window.rootViewController = navController;
 }
 
 - (void)initiateSignupController{
     JHSignupViewController *signupController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"JHSignupViewController"];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:signupController];
+    navController.navigationBarHidden = YES;
     self.window.rootViewController = navController;
 }
 @end
