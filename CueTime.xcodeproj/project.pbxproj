@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333FF4E9714E49FD89313FBA /* libPods-CueTimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */; };
 		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */; };
 		ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
@@ -27,6 +28,13 @@
 		ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B871921983100BC8EC1 /* JHProfileViewController.m */; };
 		ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */; };
 		ECA57B8D1921CB1600BC8EC1 /* JHSignupViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
+		ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */; };
+		ECA57B9519291C5400BC8EC1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9419291C5400BC8EC1 /* MobileCoreServices.framework */; };
+		ECA57B9719291C5A00BC8EC1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9619291C5A00BC8EC1 /* Security.framework */; };
+		ECA57B9919291C5F00BC8EC1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */; };
+		ECA57B9B19291C6700BC8EC1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */; };
+		ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */; };
+		FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0170658794584155802E29E2 /* Pods-CueTimeTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CueTimeTests.xcconfig"; path = "Pods/Pods-CueTimeTests.xcconfig"; sourceTree = "<group>"; };
+		0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CueTimeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CueTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CueTime.xcconfig"; path = "Pods/Pods-CueTime.xcconfig"; sourceTree = "<group>"; };
 		ECA57B451921966900BC8EC1 /* CueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA57B481921966900BC8EC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +82,13 @@
 		ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAuthenticationViewController.m; sourceTree = "<group>"; };
 		ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSignupViewController.m; sourceTree = "<group>"; };
 		ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSignupViewController.h; sourceTree = "<group>"; };
+		ECA57B901929142F00BC8EC1 /* JHAuthenticationNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAuthenticationNetworkHelper.h; sourceTree = "<group>"; };
+		ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAuthenticationNetworkHelper.m; sourceTree = "<group>"; };
+		ECA57B9419291C5400BC8EC1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ECA57B9619291C5A00BC8EC1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +97,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */,
-				ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */,
 				ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */,
+				ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */,
+				ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */,
+				ECA57B9B19291C6700BC8EC1 /* SystemConfiguration.framework in Frameworks */,
+				ECA57B9919291C5F00BC8EC1 /* CFNetwork.framework in Frameworks */,
+				ECA57B9719291C5A00BC8EC1 /* Security.framework in Frameworks */,
+				ECA57B9519291C5400BC8EC1 /* MobileCoreServices.framework in Frameworks */,
+				FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +115,7 @@
 				ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */,
 				ECA57B701921966900BC8EC1 /* UIKit.framework in Frameworks */,
 				ECA57B6F1921966900BC8EC1 /* Foundation.framework in Frameworks */,
+				333FF4E9714E49FD89313FBA /* libPods-CueTimeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +129,8 @@
 				ECA57B731921966900BC8EC1 /* CueTimeTests */,
 				ECA57B471921966900BC8EC1 /* Frameworks */,
 				ECA57B461921966900BC8EC1 /* Products */,
+				7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */,
+				0170658794584155802E29E2 /* Pods-CueTimeTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,10 +146,17 @@
 		ECA57B471921966900BC8EC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */,
+				ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */,
+				ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */,
+				ECA57B9619291C5A00BC8EC1 /* Security.framework */,
+				ECA57B9419291C5400BC8EC1 /* MobileCoreServices.framework */,
 				ECA57B481921966900BC8EC1 /* Foundation.framework */,
 				ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */,
 				ECA57B4C1921966900BC8EC1 /* UIKit.framework */,
 				ECA57B6D1921966900BC8EC1 /* XCTest.framework */,
+				265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */,
+				0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,18 +168,8 @@
 				ECA57B581921966900BC8EC1 /* JHAppDelegate.m */,
 				ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */,
 				ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */,
-				ECA57B601921966900BC8EC1 /* JHInviteViewController.h */,
-				ECA57B611921966900BC8EC1 /* JHInviteViewController.m */,
-				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
-				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
-				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
-				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
-				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
-				ECA57B871921983100BC8EC1 /* JHProfileViewController.m */,
-				ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */,
-				ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */,
-				ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */,
-				ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */,
+				ECA57B93192914AF00BC8EC1 /* Network */,
+				ECA57B8F192913E200BC8EC1 /* ViewControllers */,
 				ECA57B661921966900BC8EC1 /* Images.xcassets */,
 				ECA57B4F1921966900BC8EC1 /* Supporting Files */,
 			);
@@ -180,6 +205,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECA57B8F192913E200BC8EC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B601921966900BC8EC1 /* JHInviteViewController.h */,
+				ECA57B611921966900BC8EC1 /* JHInviteViewController.m */,
+				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
+				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
+				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
+				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
+				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
+				ECA57B871921983100BC8EC1 /* JHProfileViewController.m */,
+				ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */,
+				ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */,
+				ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */,
+				ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECA57B93192914AF00BC8EC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B901929142F00BC8EC1 /* JHAuthenticationNetworkHelper.h */,
+				ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECA57B7D1921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTime" */;
 			buildPhases = (
+				10CB083F5F084936AEC04B03 /* Check Pods Manifest.lock */,
 				ECA57B411921966900BC8EC1 /* Sources */,
 				ECA57B421921966900BC8EC1 /* Frameworks */,
 				ECA57B431921966900BC8EC1 /* Resources */,
+				120404D19530461EB76E415B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECA57B801921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTimeTests" */;
 			buildPhases = (
+				45E70759DFC94FCD9B4EF150 /* Check Pods Manifest.lock */,
 				ECA57B681921966900BC8EC1 /* Sources */,
 				ECA57B691921966900BC8EC1 /* Frameworks */,
 				ECA57B6A1921966900BC8EC1 /* Resources */,
+				6F77D349EF82431C8FD6E022 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +332,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10CB083F5F084936AEC04B03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		120404D19530461EB76E415B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CueTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45E70759DFC94FCD9B4EF150 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F77D349EF82431C8FD6E022 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CueTimeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECA57B411921966900BC8EC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,6 +406,7 @@
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
 				ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
+				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
 				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +539,7 @@
 		};
 		ECA57B7E1921966900BC8EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -431,6 +553,7 @@
 		};
 		ECA57B7F1921966900BC8EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,6 +567,7 @@
 		};
 		ECA57B811921966900BC8EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0170658794584155802E29E2 /* Pods-CueTimeTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CueTime.app/CueTime";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -466,6 +590,7 @@
 		};
 		ECA57B821921966900BC8EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0170658794584155802E29E2 /* Pods-CueTimeTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CueTime.app/CueTime";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -501,6 +626,7 @@
 				ECA57B7F1921966900BC8EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA57B801921966900BC8EC1 /* Build configuration list for PBXNativeTarget "CueTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +635,7 @@
 				ECA57B821921966900BC8EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

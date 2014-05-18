@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CCB2A853-9AA4-448E-9BD4-825E85B35F7E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CueTime</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F50537A1-406D-4833-913F-64789EBDB980</key>
+		<string>ssh://github.com/tianhe/cue_time_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CueTime.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F50537A1-406D-4833-913F-64789EBDB980</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tianhe/cue_time_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F50537A1-406D-4833-913F-64789EBDB980</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F50537A1-406D-4833-913F-64789EBDB980</string>
+			<key>IDESourceControlWCCName</key>
+			<string>THCueTimeApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
