@@ -10,8 +10,9 @@
 
 @interface JHInviteViewController : UIViewController  <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *minSize;
-@property (weak, nonatomic) IBOutlet UITextField *maxSize;
+@property (weak, nonatomic) IBOutlet UITextField *title;
+@property (weak, nonatomic) IBOutlet UITextField *activity;
+@property (weak, nonatomic) IBOutlet UITextField *size;
 @property (weak, nonatomic) IBOutlet UITextField *startTime;
 @property (weak, nonatomic) IBOutlet UITextField *duration;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *competitiveness;

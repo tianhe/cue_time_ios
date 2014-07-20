@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JHGame.h"
 
 @interface JHUpcomingView : UIView
+
+- (void) updateWithGames:(NSArray *)games;
 
 @end

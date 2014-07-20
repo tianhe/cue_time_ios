@@ -40,6 +40,7 @@
 		ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B9F192963EF00BC8EC1 /* JHUser.m */; };
 		ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */; };
 		ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA61929AAE900BC8EC1 /* JHConstants.m */; };
+		ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */; };
 		ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */; };
 		ECED81F81945593100076530 /* JHSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
 		FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */; };
@@ -111,6 +112,8 @@
 		ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUserNetworkHelper.m; sourceTree = "<group>"; };
 		ECA57BA51929AAE900BC8EC1 /* JHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants.h; sourceTree = "<group>"; };
 		ECA57BA61929AAE900BC8EC1 /* JHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHConstants.m; sourceTree = "<group>"; };
+		ECBB8C19197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CustomTransformer.h"; sourceTree = "<group>"; };
+		ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CustomTransformer.m"; sourceTree = "<group>"; };
 		ECE6B23B1946CD3600289CE2 /* AFNetworking+Promises.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+Promises.h"; sourceTree = "<group>"; };
 		ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+Promises.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +204,7 @@
 				ECA57B581921966900BC8EC1 /* JHAppDelegate.m */,
 				ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */,
 				ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */,
+				ECBB8C1C197C759C0026CFE6 /* Categories */,
 				ECA57BA81929AB5200BC8EC1 /* Helpers */,
 				ECA57BA11929641300BC8EC1 /* Models */,
 				ECA57B93192914AF00BC8EC1 /* Network */,
@@ -295,6 +299,15 @@
 				ECA57BA61929AAE900BC8EC1 /* JHConstants.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		ECBB8C1C197C759C0026CFE6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */,
+				ECBB8C19197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.h */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +490,7 @@
 				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
+				ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */,
 				ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */,
 				ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */,
 				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,

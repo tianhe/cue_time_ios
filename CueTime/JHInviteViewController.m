@@ -8,6 +8,7 @@
 
 #import "JHInviteViewController.h"
 #import "JHGameNetworkHelper.h"
+#import "JHConstants.h"
 
 @interface JHInviteViewController ()
 
@@ -19,16 +20,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.maxSize.delegate = self;
-    self.minSize.delegate = self;
-    self.location.delegate = self;
-    self.duration.delegate = self;    
+    self.title.delegate = self;
+    self.activity.delegate = self;
+    self.size.delegate = self;
 
     UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     [datePicker setDate:[NSDate date]];
     [datePicker addTarget:self action:@selector(updateTextField:) forControlEvents:UIControlEventValueChanged];
     self.startTime.inputView = datePicker;
     self.startTime.inputAccessoryView = [[UIToolbar alloc] init];
+
+    self.duration.delegate = self;
+    self.location.delegate = self;
 }
 
 - (void)updateTextField:(id)sender {
@@ -38,17 +41,20 @@
 
 - (IBAction)createGame:(id)sender {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss z"];
+    [dateFormatter setDateFormat:kAPIDateFormat];
     NSDate *date = [dateFormatter dateFromString:self.startTime.text];
     
     NSDictionary *gameParams = @{ @"game":
-                                    @{ @"start_time": date,
+                                    @{
+                                       @"title": self.title.text,
+                                       @"activity": self.activity.text,
+                                       @"size": self.size.text,
+                                       @"start_time": date,
                                        @"end_time": [[date dateByAddingTimeInterval:[self.duration.text intValue]*60] description],
-                                       @"location": self.location.text,
-                                       @"max_attendance": self.maxSize.text,
-                                       @"min_attendance": self.minSize.text,
                                        @"competitiveness": [self.competitiveness titleForSegmentAtIndex:self.competitiveness.selectedSegmentIndex],
-                                       @"experience_level": [self.experience titleForSegmentAtIndex:self.experience.selectedSegmentIndex] } };
+                                       @"experience_level": [self.experience titleForSegmentAtIndex:self.experience.selectedSegmentIndex],
+                                       @"location": self.location.text
+                                       } };
     
     Promise *promise = [JHGameNetworkHelper createGameWithParams:gameParams];
 
@@ -64,10 +70,11 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    [self.location resignFirstResponder];
-    [self.minSize resignFirstResponder];
-    [self.maxSize resignFirstResponder];
+    [self.title resignFirstResponder];
+    [self.activity resignFirstResponder];
+    [self.size resignFirstResponder];
     [self.duration resignFirstResponder];
+    [self.location resignFirstResponder];
     
     return YES;
 }

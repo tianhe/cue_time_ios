@@ -10,3 +10,4 @@
 
 //NSString *const kAPIBaseURL = @"cuetime.herokuapp.com";
 NSString *const kAPIBaseURL = @"localhost:3000";
+NSString *const kAPIDateFormat = @"yyyy-MM-dd HH:mm:ss z";

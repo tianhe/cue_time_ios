@@ -9,6 +9,7 @@
 #import "JHChallengeViewController.h"
 #import "JHUpcomingView.h"
 #import "JHGameNetworkHelper.h"
+#import "JHGame.h"
 
 @interface JHChallengeViewController ()
 
@@ -49,22 +50,12 @@
 //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
 //        [alert show];
 //    });
-
-    [JHGameNetworkHelper getOrganizingGames].then(^(NSDictionary *json){
-        NSLog(@"Organizing Games");
-    }).catch(^(NSError *err){
-        NSData *response = err.userInfo[PMKURLErrorFailingDataKey];
-        id json = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
-        [alert show];        
-    });
-    
     self.upcomingView = [[JHUpcomingView alloc] initWithFrame:bounds];
     self.goingView = [[UIView alloc] initWithFrame:bounds];
     self.organizingView = [[UIView alloc] initWithFrame:bounds];
 
     [self.eventControl addTarget:self action:@selector(segControlClicked:) forControlEvents:UIControlEventValueChanged];
+    
     [self loadUpcomingView];
 }
 
@@ -84,9 +75,32 @@
 
 - (void)loadUpcomingView
 {
+    [self loadUpcomingGames];
+    
     [self.goingView removeFromSuperview];
     [self.organizingView removeFromSuperview];
     [self.view addSubview:self.upcomingView];
+}
+
+- (void)loadUpcomingGames
+{
+    NSMutableArray *organizingGames = [[NSMutableArray alloc] init];
+    [JHGameNetworkHelper getOrganizingGames].then(^(NSArray *json){
+        for (NSDictionary *gameArray in json){
+            NSError* error = nil;
+            JHGame *game = [[JHGame alloc] initWithDictionary:gameArray error:&error];
+            if(game)
+                [organizingGames addObject:game];
+        }
+        self.organizingGames = organizingGames;
+        [self.upcomingView updateWithGames:self.organizingGames];
+    }).catch(^(NSError *err){
+        NSData *response = err.userInfo[PMKURLErrorFailingDataKey];
+        id json = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+        [alert show];
+    });
 }
 - (void)loadGoingView
 {

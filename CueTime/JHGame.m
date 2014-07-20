@@ -10,4 +10,9 @@
 
 @implementation JHGame
 
++(JSONKeyMapper *)keyMapper
+{
+    return [JSONKeyMapper mapperFromUnderscoreCaseToCamelCase];
+}
+
 @end
