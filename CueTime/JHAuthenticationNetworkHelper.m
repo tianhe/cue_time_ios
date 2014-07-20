@@ -7,7 +7,15 @@
 //
 
 #import "JHAuthenticationNetworkHelper.h"
+#import "JHConstants.h"
+#import "JHUser.h"
+#import "AFNetworking+Promises.h"
 
 @implementation JHAuthenticationNetworkHelper
+
++ (Promise *)authenticateUserWithParams:(NSDictionary *)params{
+    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/authentications", kAPIBaseURL];
+    return [JHNetworkHelper post:userAPIUrl parameters:params];
+}
 
 @end

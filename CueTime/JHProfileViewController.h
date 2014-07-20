@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHProfileViewController : UIViewController
+@interface JHProfileViewController : UIViewController <UITextFieldDelegate> 
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gender;
+@property (weak, nonatomic) IBOutlet UIDatePicker *birthdate;
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *drinkingHabit;
 
 @end

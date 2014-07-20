@@ -10,4 +10,7 @@
 
 @interface JHAuthenticationViewController : UIViewController
 
+@property(strong, nonatomic) IBOutlet UITextField *email;
+@property(strong, nonatomic) IBOutlet UITextField *password;
+
 @end

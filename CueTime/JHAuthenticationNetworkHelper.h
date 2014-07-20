@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JHNetworkHelper.h"
 
 @interface JHAuthenticationNetworkHelper : NSObject
+
++ (Promise *)authenticateUserWithParams:(NSDictionary *)params;
 
 @end

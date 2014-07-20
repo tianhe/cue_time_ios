@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		333FF4E9714E49FD89313FBA /* libPods-CueTimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */; };
+		EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */; };
+		EC5384E61978B7E4006AA0EC /* JHUpcomingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */; };
+		EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */; };
+		EC5384ED197B879B006AA0EC /* JHGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384EC197B879B006AA0EC /* JHGame.m */; };
 		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */; };
 		ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
@@ -27,13 +31,17 @@
 		ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B84192197A000BC8EC1 /* JHChatViewController.m */; };
 		ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B871921983100BC8EC1 /* JHProfileViewController.m */; };
 		ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */; };
-		ECA57B8D1921CB1600BC8EC1 /* JHSignupViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
 		ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */; };
 		ECA57B9519291C5400BC8EC1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9419291C5400BC8EC1 /* MobileCoreServices.framework */; };
 		ECA57B9719291C5A00BC8EC1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9619291C5A00BC8EC1 /* Security.framework */; };
 		ECA57B9919291C5F00BC8EC1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */; };
 		ECA57B9B19291C6700BC8EC1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */; };
 		ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */; };
+		ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B9F192963EF00BC8EC1 /* JHUser.m */; };
+		ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */; };
+		ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA61929AAE900BC8EC1 /* JHConstants.m */; };
+		ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */; };
+		ECED81F81945593100076530 /* JHSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
 		FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +60,14 @@
 		0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CueTimeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CueTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CueTime.xcconfig"; path = "Pods/Pods-CueTime.xcconfig"; sourceTree = "<group>"; };
+		EC5384E1196CF153006AA0EC /* JHGameNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGameNetworkHelper.h; sourceTree = "<group>"; };
+		EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGameNetworkHelper.m; sourceTree = "<group>"; };
+		EC5384E41978B7E3006AA0EC /* JHUpcomingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingView.h; sourceTree = "<group>"; };
+		EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingView.m; sourceTree = "<group>"; };
+		EC5384E8197B7751006AA0EC /* JHNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNetworkHelper.h; sourceTree = "<group>"; };
+		EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkHelper.m; sourceTree = "<group>"; };
+		EC5384EB197B879B006AA0EC /* JHGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGame.h; sourceTree = "<group>"; };
+		EC5384EC197B879B006AA0EC /* JHGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGame.m; sourceTree = "<group>"; };
 		ECA57B451921966900BC8EC1 /* CueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA57B481921966900BC8EC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +105,14 @@
 		ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ECA57B9E192963EE00BC8EC1 /* JHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUser.h; sourceTree = "<group>"; };
+		ECA57B9F192963EF00BC8EC1 /* JHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUser.m; sourceTree = "<group>"; };
+		ECA57BA2192964F500BC8EC1 /* JHUserNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUserNetworkHelper.h; sourceTree = "<group>"; };
+		ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUserNetworkHelper.m; sourceTree = "<group>"; };
+		ECA57BA51929AAE900BC8EC1 /* JHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants.h; sourceTree = "<group>"; };
+		ECA57BA61929AAE900BC8EC1 /* JHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHConstants.m; sourceTree = "<group>"; };
+		ECE6B23B1946CD3600289CE2 /* AFNetworking+Promises.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+Promises.h"; sourceTree = "<group>"; };
+		ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+Promises.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC5384E71978BAC8006AA0EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC5384E41978B7E3006AA0EC /* JHUpcomingView.h */,
+				EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		ECA57B3C1921966800BC8EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +201,10 @@
 				ECA57B581921966900BC8EC1 /* JHAppDelegate.m */,
 				ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */,
 				ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */,
+				ECA57BA81929AB5200BC8EC1 /* Helpers */,
+				ECA57BA11929641300BC8EC1 /* Models */,
 				ECA57B93192914AF00BC8EC1 /* Network */,
+				EC5384E71978BAC8006AA0EC /* Views */,
 				ECA57B8F192913E200BC8EC1 /* ViewControllers */,
 				ECA57B661921966900BC8EC1 /* Images.xcassets */,
 				ECA57B4F1921966900BC8EC1 /* Supporting Files */,
@@ -227,10 +263,38 @@
 		ECA57B93192914AF00BC8EC1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EC5384E8197B7751006AA0EC /* JHNetworkHelper.h */,
+				EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */,
+				EC5384E1196CF153006AA0EC /* JHGameNetworkHelper.h */,
+				EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */,
+				ECA57BA2192964F500BC8EC1 /* JHUserNetworkHelper.h */,
+				ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */,
 				ECA57B901929142F00BC8EC1 /* JHAuthenticationNetworkHelper.h */,
 				ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		ECA57BA11929641300BC8EC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B9E192963EE00BC8EC1 /* JHUser.h */,
+				ECA57B9F192963EF00BC8EC1 /* JHUser.m */,
+				EC5384EB197B879B006AA0EC /* JHGame.h */,
+				EC5384EC197B879B006AA0EC /* JHGame.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ECA57BA81929AB5200BC8EC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ECE6B23B1946CD3600289CE2 /* AFNetworking+Promises.h */,
+				ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */,
+				ECA57BA51929AAE900BC8EC1 /* JHConstants.h */,
+				ECA57BA61929AAE900BC8EC1 /* JHConstants.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA57B8D1921CB1600BC8EC1 /* JHSignupViewController.m in Resources */,
 				ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */,
 				ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */,
 				ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */,
@@ -401,12 +464,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
+				ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */,
+				ECED81F81945593100076530 /* JHSignupViewController.m in Sources */,
+				EC5384ED197B879B006AA0EC /* JHGame.m in Sources */,
 				ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */,
+				EC5384E61978B7E4006AA0EC /* JHUpcomingView.m in Sources */,
 				ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */,
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
+				EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */,
+				EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */,
 				ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */,
+				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
+				ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */,
+				ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */,
 				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

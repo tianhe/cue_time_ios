@@ -10,4 +10,6 @@
 
 @interface JHChallengeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *eventControl;
+
 @end

@@ -9,6 +9,7 @@
 #import "JHAppDelegate.h"
 #import "JHAuthenticationViewController.h"
 #import "JHSignupViewController.h"
+#import "JHConstants.h"
 
 @implementation JHAppDelegate
 

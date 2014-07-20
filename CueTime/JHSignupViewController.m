@@ -8,6 +8,8 @@
 
 #import "JHSignupViewController.h"
 #import "JHAppDelegate.h"
+#import "JHUserNetworkHelper.h"
+#import "PromiseKit+Foundation.h"
 
 @interface JHSignupViewController ()
 
@@ -23,10 +25,29 @@
 
 - (IBAction)signup:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loggedIn"];
+    NSDictionary *params = @{@"user" :
+                                 @{@"email": self.email.text,
+                                   @"password": self.password.text}
+                             };
     
-    JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate initiateTabBarController];
+    Promise *promise = [JHUserNetworkHelper createUserWithParams:params];
+    
+    promise.then(^(NSDictionary *json){
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loggedIn"];
+        [[NSUserDefaults standardUserDefaults] setValue:json[@"user"][@"authentication_token"] forKey:@"authentication_token"];
+        [[NSUserDefaults standardUserDefaults] setValue:json[@"user"][@"email"] forKey:@"email"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+
+        JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate initiateTabBarController];
+    }).catch(^(NSError *err){
+        NSData *response = err.userInfo[PMKURLErrorFailingDataKey];
+        id json = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+        [alert show];
+    });
+    
 }
 
 - (IBAction)switchToAuthentication:(id)sender

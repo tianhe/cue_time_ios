@@ -2,9 +2,9 @@
 platform :ios, "7.0"
 
 target "CueTime" do
-  pod 'RestKit'
-  pod 'RestKit/Testing'
-  pod 'RestKit/Search'
+  pod 'AFNetworking', "~> 2.0"
+  pod 'PromiseKit'
+  pod 'JSONModel'
 end
 
 target "CueTimeTests" do
