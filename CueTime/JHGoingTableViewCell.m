@@ -1,29 +1,33 @@
 //
-//  JHUpcomingView.m
+//  JHGoingTableViewCell.m
 //  CueTime
 //
-//  Created by Tian He on 7/17/14.
+//  Created by Tian He on 7/21/14.
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import "JHUpcomingView.h"
+#import "JHGoingTableViewCell.h"
 
-@implementation JHUpcomingView
+@implementation JHGoingTableViewCell
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self = [super initWithFrame:frame];
-    
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-
+        // Initialization code
     }
     return self;
 }
 
-- (void) updateWithGames:(NSArray *)games
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    JHGame *game = [games objectAtIndex:0];
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
+}
 
+- (void) updateWithGame:(JHGame *)game
+{
     UILabel *activity = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 200, 20)];
     activity.text = game.activityName;
     [activity setFont:[UIFont systemFontOfSize:14]];

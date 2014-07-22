@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.title.delegate = self;
+    self.titleField.delegate = self;
     self.activity.delegate = self;
     self.size.delegate = self;
 
@@ -46,7 +46,7 @@
     
     NSDictionary *gameParams = @{ @"game":
                                     @{
-                                       @"title": self.title.text,
+                                       @"title": self.titleField.text,
                                        @"activity": self.activity.text,
                                        @"size": self.size.text,
                                        @"start_time": date,
@@ -70,7 +70,7 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    [self.title resignFirstResponder];
+    [self.titleField resignFirstResponder];
     [self.activity resignFirstResponder];
     [self.size resignFirstResponder];
     [self.duration resignFirstResponder];

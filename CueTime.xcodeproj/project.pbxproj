@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		333FF4E9714E49FD89313FBA /* libPods-CueTimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0965E50BADF94D22BAAEFAE9 /* libPods-CueTimeTests.a */; };
 		EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */; };
-		EC5384E61978B7E4006AA0EC /* JHUpcomingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */; };
 		EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */; };
 		EC5384ED197B879B006AA0EC /* JHGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384EC197B879B006AA0EC /* JHGame.m */; };
+		ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */; };
+		ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32768197DD22B0076F4EE /* JHGoingViewController.m */; };
+		ECA3276C197DD23B0076F4EE /* JHOrganizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */; };
+		ECA32770197DED120076F4EE /* JHUpcomingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */; };
+		ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */; };
+		ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */; };
 		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */; };
 		ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
@@ -63,12 +68,22 @@
 		7333562FE40B4EB89F40003C /* Pods-CueTime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CueTime.xcconfig"; path = "Pods/Pods-CueTime.xcconfig"; sourceTree = "<group>"; };
 		EC5384E1196CF153006AA0EC /* JHGameNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGameNetworkHelper.h; sourceTree = "<group>"; };
 		EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGameNetworkHelper.m; sourceTree = "<group>"; };
-		EC5384E41978B7E3006AA0EC /* JHUpcomingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingView.h; sourceTree = "<group>"; };
-		EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingView.m; sourceTree = "<group>"; };
 		EC5384E8197B7751006AA0EC /* JHNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNetworkHelper.h; sourceTree = "<group>"; };
 		EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkHelper.m; sourceTree = "<group>"; };
 		EC5384EB197B879B006AA0EC /* JHGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGame.h; sourceTree = "<group>"; };
 		EC5384EC197B879B006AA0EC /* JHGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGame.m; sourceTree = "<group>"; };
+		ECA32764197DD2220076F4EE /* JHUpcomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingViewController.h; sourceTree = "<group>"; };
+		ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingViewController.m; sourceTree = "<group>"; };
+		ECA32767197DD22B0076F4EE /* JHGoingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingViewController.h; sourceTree = "<group>"; };
+		ECA32768197DD22B0076F4EE /* JHGoingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingViewController.m; sourceTree = "<group>"; };
+		ECA3276A197DD23B0076F4EE /* JHOrganizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOrganizingViewController.h; sourceTree = "<group>"; };
+		ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOrganizingViewController.m; sourceTree = "<group>"; };
+		ECA3276E197DED120076F4EE /* JHUpcomingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingTableViewCell.h; sourceTree = "<group>"; };
+		ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingTableViewCell.m; sourceTree = "<group>"; };
+		ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingTableViewCell.h; sourceTree = "<group>"; };
+		ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingTableViewCell.m; sourceTree = "<group>"; };
+		ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOrganizingTableViewCell.h; sourceTree = "<group>"; };
+		ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOrganizingTableViewCell.m; sourceTree = "<group>"; };
 		ECA57B451921966900BC8EC1 /* CueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA57B481921966900BC8EC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,10 +167,29 @@
 		EC5384E71978BAC8006AA0EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EC5384E41978B7E3006AA0EC /* JHUpcomingView.h */,
-				EC5384E51978B7E4006AA0EC /* JHUpcomingView.m */,
+				ECA3276E197DED120076F4EE /* JHUpcomingTableViewCell.h */,
+				ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */,
+				ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */,
+				ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */,
+				ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */,
+				ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		ECA3276D197DD2430076F4EE /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
+				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
+				ECA32764197DD2220076F4EE /* JHUpcomingViewController.h */,
+				ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */,
+				ECA32767197DD22B0076F4EE /* JHGoingViewController.h */,
+				ECA32768197DD22B0076F4EE /* JHGoingViewController.m */,
+				ECA3276A197DD23B0076F4EE /* JHOrganizingViewController.h */,
+				ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */,
+			);
+			name = Games;
 			sourceTree = "<group>";
 		};
 		ECA57B3C1921966800BC8EC1 = {
@@ -250,8 +284,7 @@
 			children = (
 				ECA57B601921966900BC8EC1 /* JHInviteViewController.h */,
 				ECA57B611921966900BC8EC1 /* JHInviteViewController.m */,
-				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
-				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
+				ECA3276D197DD2430076F4EE /* Games */,
 				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
 				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
 				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
@@ -477,20 +510,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
+				ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */,
 				ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */,
 				ECED81F81945593100076530 /* JHSignupViewController.m in Sources */,
+				ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */,
 				EC5384ED197B879B006AA0EC /* JHGame.m in Sources */,
+				ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */,
 				ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */,
-				EC5384E61978B7E4006AA0EC /* JHUpcomingView.m in Sources */,
 				ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */,
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
 				EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */,
 				EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */,
 				ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */,
+				ECA3276C197DD23B0076F4EE /* JHOrganizingViewController.m in Sources */,
 				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
 				ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */,
+				ECA32770197DED120076F4EE /* JHUpcomingTableViewCell.m in Sources */,
+				ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */,
 				ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */,
 				ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */,
 				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,
