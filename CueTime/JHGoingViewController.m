@@ -23,8 +23,11 @@
     
     CGRect bounds = self.view.bounds;
     bounds.origin.y = 100;
-    self.tableView.frame = bounds;
-    
+    self.tableView.frame = bounds;    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     [self loadGames];
 }
 
