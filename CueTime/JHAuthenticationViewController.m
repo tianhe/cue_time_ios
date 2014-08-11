@@ -20,6 +20,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.email.delegate = self;
+    self.password.delegate = self;
 }
 
 - (IBAction)login:(id)sender
@@ -54,6 +56,14 @@
 {
     JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate initiateSignupController];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.email resignFirstResponder];
+    [self.password resignFirstResponder];
+    
+    return YES;
 }
 
 @end

@@ -10,3 +10,4 @@
 
 extern NSString *const kAPIBaseURL;
 extern NSString *const kAPIDateFormat;
+extern NSString *const kDisplayDateFormat;

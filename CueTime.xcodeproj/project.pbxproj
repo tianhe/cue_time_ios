@@ -11,6 +11,7 @@
 		EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */; };
 		EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */; };
 		EC5384ED197B879B006AA0EC /* JHGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384EC197B879B006AA0EC /* JHGame.m */; };
+		EC7CAD35199884960013803A /* JHAttendanceNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */; };
 		ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */; };
 		ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32768197DD22B0076F4EE /* JHGoingViewController.m */; };
 		ECA3276C197DD23B0076F4EE /* JHOrganizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */; };
@@ -72,6 +73,8 @@
 		EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNetworkHelper.m; sourceTree = "<group>"; };
 		EC5384EB197B879B006AA0EC /* JHGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGame.h; sourceTree = "<group>"; };
 		EC5384EC197B879B006AA0EC /* JHGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGame.m; sourceTree = "<group>"; };
+		EC7CAD33199884960013803A /* JHAttendanceNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAttendanceNetworkHelper.h; sourceTree = "<group>"; };
+		EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAttendanceNetworkHelper.m; sourceTree = "<group>"; };
 		ECA32764197DD2220076F4EE /* JHUpcomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingViewController.h; sourceTree = "<group>"; };
 		ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingViewController.m; sourceTree = "<group>"; };
 		ECA32767197DD22B0076F4EE /* JHGoingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingViewController.h; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 				EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */,
 				EC5384E1196CF153006AA0EC /* JHGameNetworkHelper.h */,
 				EC5384E2196CF153006AA0EC /* JHGameNetworkHelper.m */,
+				EC7CAD33199884960013803A /* JHAttendanceNetworkHelper.h */,
+				EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */,
 				ECA57BA2192964F500BC8EC1 /* JHUserNetworkHelper.h */,
 				ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */,
 				ECA57B901929142F00BC8EC1 /* JHAuthenticationNetworkHelper.h */,
@@ -526,6 +531,7 @@
 				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
+				EC7CAD35199884960013803A /* JHAttendanceNetworkHelper.m in Sources */,
 				ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */,
 				ECA32770197DED120076F4EE /* JHUpcomingTableViewCell.m in Sources */,
 				ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */,

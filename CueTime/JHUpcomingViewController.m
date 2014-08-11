@@ -10,6 +10,7 @@
 #import "JHGame.h"
 #import "JHGameNetworkHelper.h"
 #import "JHUpcomingTableViewCell.h"
+#import "JHAttendanceNetworkHelper.h"
 
 @interface JHUpcomingViewController ()
 
@@ -65,6 +66,9 @@
     }
     JHGame *game = (JHGame *)[self.games objectAtIndex:indexPath.row];
     [cell updateWithGame:game];
+    
+    [cell.button addTarget:self action:@selector(acceptGameButtonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+
     return cell;
 }
 
@@ -72,4 +76,23 @@
 {
     return 100.0;
 }
+
+- (void) acceptGameButtonWasTapped:(UIButton *)sender
+{
+
+    NSDictionary *params = @{@"game_id": [NSString stringWithFormat:@"%d", sender.tag],
+                             @"user_id": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]
+                            };
+    
+    [JHAttendanceNetworkHelper createAttendanceWithParams:params].then(^(NSArray *json){
+        [self.tableView reloadData];
+    }).catch(^(NSError *err){
+        NSData *response = err.userInfo[PMKURLErrorFailingDataKey];
+        id json = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+        [alert show];
+    });    
+}
+
 @end

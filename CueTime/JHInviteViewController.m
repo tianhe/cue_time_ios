@@ -36,13 +36,20 @@
 
 - (void)updateTextField:(id)sender {
     UIDatePicker *picker = (UIDatePicker*)self.startTime.inputView;
-    self.startTime.text = [NSString stringWithFormat:@"%@", picker.date];
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setDateFormat:kDisplayDateFormat];
+
+    self.startTime.text = [dateFormatter stringFromDate:picker.date];
 }
 
 - (IBAction)createGame:(id)sender {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:kAPIDateFormat];
-    NSDate *date = [dateFormatter dateFromString:self.startTime.text];
+    //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //[dateFormatter setDateFormat:kAPIDateFormat];
+    //NSDate *date = [dateFormatter dateFromString:self.startTime.text];
+    UIDatePicker *picker = (UIDatePicker*)self.startTime.inputView;
+    NSDate *date = picker.date;
     
     NSDictionary *gameParams = @{ @"game":
                                     @{

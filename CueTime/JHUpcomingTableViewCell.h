@@ -13,4 +13,6 @@
 
 - (void) updateWithGame:(JHGame *)game;
 
+@property (nonatomic, strong) UIButton *button;
+
 @end

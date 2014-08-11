@@ -21,7 +21,7 @@
 @property NSString<Optional> *drinksRequirement;
 @property NSString *competitiveness;
 @property NSString *status;
-@property NSString *neighborhood;
+@property NSString<Optional> *neighborhood;
 @property NSString *organizerName;
 @property NSString *activityName;
 @property NSDate *startTime;

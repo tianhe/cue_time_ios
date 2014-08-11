@@ -74,6 +74,11 @@
     competitiveness.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:competitiveness];
     
+    self.button = [[UIButton alloc] initWithFrame:CGRectMake(100, 60, 20, 20)];
+    [self.button setTitle:@"Y" forState:UIControlStateNormal];
+    self.button.tag = game.id;
+    [contentView addSubview:self.button];
+    
     [self.contentView addSubview:contentView];
 }
 

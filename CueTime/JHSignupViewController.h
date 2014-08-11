@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHSignupViewController : UIViewController
+@interface JHSignupViewController : UIViewController <UITextFieldDelegate>
 
 @property(strong, nonatomic) IBOutlet UITextField *email;
 @property(strong, nonatomic) IBOutlet UITextField *password;
