@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "JSONModel.h"
+#import "JHAttendance.h"
+
+@protocol JHAttendance
+@end
 
 @interface JHGame : JSONModel
 
@@ -22,9 +26,10 @@
 @property NSString *competitiveness;
 @property NSString *status;
 @property NSString<Optional> *neighborhood;
-@property NSString *organizerName;
+@property NSString<Optional> *organizerName;
 @property NSString *activityName;
 @property NSDate *startTime;
 @property NSDate *endTime;
+@property (strong, nonatomic) NSArray<JHAttendance>* attendances;
 
 @end

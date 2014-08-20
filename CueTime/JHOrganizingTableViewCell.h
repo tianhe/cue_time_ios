@@ -12,5 +12,6 @@
 @interface JHOrganizingTableViewCell : UITableViewCell
 
 - (void) updateWithGame:(JHGame *)game;
+@property UIButton *button;
 
 @end

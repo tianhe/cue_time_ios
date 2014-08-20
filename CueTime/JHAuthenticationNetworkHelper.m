@@ -15,7 +15,7 @@
 
 + (Promise *)authenticateUserWithParams:(NSDictionary *)params{
     NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/authentications", kAPIBaseURL];
-    return [JHNetworkHelper post:userAPIUrl parameters:params];
+    return [JHNetworkHelper POST:userAPIUrl parameters:params];
 }
 
 @end

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JHGame.h"
+#import "JHAttendance.h"
 
 @interface JHGoingTableViewCell : UITableViewCell
 
-- (void) updateWithGame:(JHGame *)game;
+- (void) updateWithGame:(JHGame *)game andAttendance:(JHAttendance *)attendance;
+@property UIButton *button;
 
 @end

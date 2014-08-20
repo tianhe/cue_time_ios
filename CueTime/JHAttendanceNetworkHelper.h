@@ -10,6 +10,8 @@
 
 @interface JHAttendanceNetworkHelper : JHNetworkHelper
 
++ (Promise *)getAttendances;
 + (Promise *)createAttendanceWithParams:(NSDictionary *)params;
-
++ (Promise *)deleteAttendanceWithID:(NSString *)attendanceId;
++ (Promise *)updateAttendanceWithParams:(NSDictionary *)params withID:(NSString *)attendanceID;
 @end

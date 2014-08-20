@@ -15,17 +15,17 @@
 
 + (Promise *)getUserWithId:(NSNumber *)userId{
     NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@.json", kAPIBaseURL, userId];
-    return [JHNetworkHelper get:userAPIUrl];
+    return [JHNetworkHelper GET:userAPIUrl];
 }
 
 + (Promise *)createUserWithParams:(NSDictionary *)params{
     NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users", kAPIBaseURL];
-    return [JHNetworkHelper post:userAPIUrl parameters:params];
+    return [JHNetworkHelper POST:userAPIUrl parameters:params];
 }
 
 + (Promise *)updateUserWithParams:(NSDictionary *)params withID:(NSString *)userId{
     NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@", kAPIBaseURL, userId];
-    return [JHNetworkHelper put:userAPIUrl parameters:params];
+    return [JHNetworkHelper PUT:userAPIUrl parameters:params];
 }
 
 @end

@@ -12,7 +12,7 @@
 
 @implementation JHNetworkHelper
 
-+ (Promise *)post:(NSString *)url parameters:(NSDictionary *)params
++ (Promise *)POST:(NSString *)url parameters:(NSDictionary *)params
 {
     NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] initWithDictionary:params];
     
@@ -25,7 +25,7 @@
     return [NSURLConnection POST:url formURLEncodedParameters:authenticatedParams];
 }
 
-+ (Promise *)get:(NSString *)url
++ (Promise *)GET:(NSString *)url
 {
     NSString *authenticationToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"authentication_token"];
     NSString *email = [[NSUserDefaults standardUserDefaults] objectForKey:@"email" ];
@@ -34,7 +34,7 @@
     return [NSURLConnection GET:getUrl];
 }
 
-+ (Promise *)put:(NSString *)url parameters:(NSDictionary *)params
++ (Promise *)PUT:(NSString *)url parameters:(NSDictionary *)params
 {
     NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] initWithDictionary:params];
     
@@ -47,5 +47,16 @@
     
 }
 
++ (Promise *)DELETE:(NSString *)url
+{
+    NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] init];
+
+    NSString *authenticationToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"authentication_token"];
+    [authenticatedParams setValue:authenticationToken forKey:@"authentication_token"];
+    [authenticatedParams setValue:[[NSUserDefaults standardUserDefaults] objectForKey:@"email" ] forKey:@"email"];
+
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
+    return [manager DELETE:url parameters:authenticatedParams];
+}
 
 @end

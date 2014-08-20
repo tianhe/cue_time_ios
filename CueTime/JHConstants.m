@@ -9,6 +9,6 @@
 #import "JHConstants.h"
 
 //NSString *const kAPIBaseURL = @"cuetime.herokuapp.com";
-NSString *const kAPIBaseURL = @"localhost:5000";
+NSString *const kAPIBaseURL = @"localhost:3000";
 NSString *const kAPIDateFormat = @"yyyy-MM-dd HH:mm:ss z";
 NSString *const kDisplayDateFormat = @"yyyy-MM-dd hh:mm a";

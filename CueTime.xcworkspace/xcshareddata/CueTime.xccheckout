@@ -10,29 +10,29 @@
 	<string>CueTime</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F50537A1-406D-4833-913F-64789EBDB980</key>
+		<key>172F0E67EA127E7A98B350877E49DE83865F96C2</key>
 		<string>ssh://github.com/tianhe/cue_time_ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CueTime.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F50537A1-406D-4833-913F-64789EBDB980</key>
+		<key>172F0E67EA127E7A98B350877E49DE83865F96C2</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/tianhe/cue_time_ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F50537A1-406D-4833-913F-64789EBDB980</string>
+	<string>172F0E67EA127E7A98B350877E49DE83865F96C2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F50537A1-406D-4833-913F-64789EBDB980</string>
+			<string>172F0E67EA127E7A98B350877E49DE83865F96C2</string>
 			<key>IDESourceControlWCCName</key>
 			<string>THCueTimeApp</string>
 		</dict>

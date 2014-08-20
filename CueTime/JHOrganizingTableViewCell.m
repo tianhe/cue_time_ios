@@ -28,6 +28,10 @@
 
 - (void) updateWithGame:(JHGame *)game
 {
+    for(UIView*subView in self.contentView.subviews) {
+        [subView removeFromSuperview];
+    }
+        
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 350, 90)];
     
     UILabel *activity = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 50, 20)];
@@ -35,13 +39,13 @@
     [activity setFont:[UIFont systemFontOfSize:14]];
     [contentView addSubview:activity];
     
-    UILabel *size = [[UILabel alloc] initWithFrame:CGRectMake(90, 0, 40, 20)];
+    UILabel *size = [[UILabel alloc] initWithFrame:CGRectMake(160, 0, 40, 20)];
     size.text = [game.size stringValue];
     size.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:size];
     
     
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(120, 0, 200, 20)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(90, 0, 200, 20)];
     title.text = game.title;
     title.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:title];
@@ -73,6 +77,12 @@
     competitiveness.text = game.competitiveness;
     competitiveness.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:competitiveness];
+
+    self.button = [[UIButton alloc] initWithFrame:CGRectMake(250, 40, 20, 20)];
+    [self.button setTitle:@"X" forState:UIControlStateNormal];
+    [self.button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    self.button.tag = game.id;
+    [contentView addSubview:self.button];
     
     [self.contentView addSubview:contentView];
 }

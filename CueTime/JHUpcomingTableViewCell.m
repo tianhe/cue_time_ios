@@ -28,6 +28,10 @@
 
 - (void) updateWithGame:(JHGame *)game
 {
+    for(UIView*subView in self.contentView.subviews) {
+        [subView removeFromSuperview];
+    }
+
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 350, 90)];
     
     UILabel *activity = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 200, 20)];
@@ -35,13 +39,13 @@
     [activity setFont:[UIFont systemFontOfSize:14]];
     [contentView addSubview:activity];
     
-    UILabel *size = [[UILabel alloc] initWithFrame:CGRectMake(60, 0, 200, 20)];
+    UILabel *size = [[UILabel alloc] initWithFrame:CGRectMake(160, 0, 200, 20)];
     size.text = [game.size stringValue];
     size.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:size];
     
     
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(90, 0, 200, 20)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, 200, 20)];
     title.text = game.title;
     title.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:title];
@@ -69,13 +73,14 @@
     experienceLevel.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:experienceLevel];
     
-    UILabel *competitiveness = [[UILabel alloc] initWithFrame:CGRectMake(60, 60, 200, 20)];
+    UILabel *competitiveness = [[UILabel alloc] initWithFrame:CGRectMake(160, 60, 200, 20)];
     competitiveness.text = game.competitiveness;
     competitiveness.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:competitiveness];
     
-    self.button = [[UIButton alloc] initWithFrame:CGRectMake(100, 60, 20, 20)];
+    self.button = [[UIButton alloc] initWithFrame:CGRectMake(250, 40, 20, 20)];
     [self.button setTitle:@"Y" forState:UIControlStateNormal];
+    [self.button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     self.button.tag = game.id;
     [contentView addSubview:self.button];
     
