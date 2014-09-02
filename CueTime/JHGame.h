@@ -23,7 +23,7 @@
 @property NSNumber<Optional> *minAge;
 @property NSString<Optional> *genderRequirement;
 @property NSString<Optional> *drinksRequirement;
-@property NSString *competitiveness;
+@property NSString<Optional> *competitiveness;
 @property NSString *status;
 @property NSString<Optional> *neighborhood;
 @property NSString<Optional> *organizerName;

@@ -72,12 +72,18 @@
     experienceLevel.text = game.experienceLevel;
     experienceLevel.font = [UIFont systemFontOfSize:14];
     [contentView addSubview:experienceLevel];
+
+    UILabel *attendees = [[UILabel alloc] initWithFrame:CGRectMake(130, 60, 200, 20)];
     
-    UILabel *competitiveness = [[UILabel alloc] initWithFrame:CGRectMake(160, 60, 200, 20)];
-    competitiveness.text = game.competitiveness;
-    competitiveness.font = [UIFont systemFontOfSize:14];
-    [contentView addSubview:competitiveness];
+    NSString *attendanceIds = @"";
+    for (JHAttendance *attendance in game.attendances){
+        attendanceIds =  [NSString stringWithFormat:@"%@ ", attendance.userId];
+    }
     
+    attendees.text = attendanceIds;
+    attendees.font = [UIFont systemFontOfSize:14];
+    [contentView addSubview:attendees];
+
     self.button = [[UIButton alloc] initWithFrame:CGRectMake(250, 40, 20, 20)];
     [self.button setTitle:@"Y" forState:UIControlStateNormal];
     [self.button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];

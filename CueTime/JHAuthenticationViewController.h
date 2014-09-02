@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface JHAuthenticationViewController : UIViewController <UITextFieldDelegate>
-
-@property(strong, nonatomic) IBOutlet UITextField *email;
-@property(strong, nonatomic) IBOutlet UITextField *password;
+@interface JHAuthenticationViewController : UIViewController <UITextFieldDelegate, FBLoginViewDelegate>
 
 @end

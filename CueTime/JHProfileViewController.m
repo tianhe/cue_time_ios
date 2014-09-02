@@ -47,14 +47,8 @@
 
 - (IBAction)logout:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"loggedIn"];
-    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"authentication_token"];
-    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"user_id"];
-    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"email"];
-    
-    [[NSUserDefaults standardUserDefaults] synchronize];
     JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate initiateAuthController];
+    [delegate logout];
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Invite View Controller - Invite-->
+        <!--Organize View Controller - Invite-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="Invite" id="CZ4-MO-1fc" customClass="JHInviteViewController" sceneMemberID="viewController">
+                <viewController title="Invite" id="CZ4-MO-1fc" customClass="JHOrganizeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s9W-kb-ARv"/>
                         <viewControllerLayoutGuide type="bottom" id="dtj-EO-iXF"/>
@@ -27,22 +27,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4s-iw-CRt">
-                                        <rect key="frame" x="97" y="326" width="217" height="30"/>
+                                        <rect key="frame" x="94" y="278" width="217" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rdn-my-adH">
-                                        <rect key="frame" x="7" y="246" width="307" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="Playground"/>
-                                            <segment title="JV"/>
-                                            <segment title="Varsity"/>
-                                        </segments>
-                                    </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-Zj-epk">
-                                        <rect key="frame" x="7" y="283" width="307" height="29"/>
+                                        <rect key="frame" x="8" y="239" width="307" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
                                             <segment title="Beginner"/>
@@ -51,7 +42,7 @@
                                         </segments>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-u6-CXM">
-                                        <rect key="frame" x="97" y="380" width="126" height="30"/>
+                                        <rect key="frame" x="94" y="341" width="126" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Create New Game">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +85,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-Fz-0Q2">
-                                        <rect key="frame" x="13" y="331" width="67" height="21"/>
+                                        <rect key="frame" x="10" y="283" width="67" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -138,7 +129,6 @@
                     <navigationItem key="navigationItem" id="x6v-sv-ebc"/>
                     <connections>
                         <outlet property="activity" destination="yhm-ni-4t1" id="Bka-Jv-WaO"/>
-                        <outlet property="competitiveness" destination="Rdn-my-adH" id="Z3o-ex-egl"/>
                         <outlet property="duration" destination="e4x-NM-fmE" id="eO8-kU-ozI"/>
                         <outlet property="experience" destination="m5d-Zj-epk" id="eln-Ld-IgH"/>
                         <outlet property="location" destination="d4s-iw-CRt" id="JjR-sc-ZHq"/>
@@ -192,58 +182,18 @@
                         <viewControllerLayoutGuide type="top" id="zul-1b-B8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="MBx-de-Q2y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oRS-tP-w8Q">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="JHAuthenticationViewController" id="oRS-tP-w8Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSY-rP-nOd">
-                                <rect key="frame" x="50" y="236" width="220" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJt-Tj-Kg0">
-                                <rect key="frame" x="50" y="305" width="220" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d27-XZ-Azl">
-                                <rect key="frame" x="215" y="374" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="login:" destination="ln5-cw-Go9" eventType="touchUpInside" id="uEy-UI-JUY"/>
-                                </connections>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="5qA-ZG-6eS">
-                                <rect key="frame" x="50" y="164" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Signup"/>
-                                    <segment title="Login"/>
-                                </segments>
-                                <connections>
-                                    <action selector="switchToSignup:" destination="ln5-cw-Go9" eventType="valueChanged" id="5kY-It-d0f"/>
-                                </connections>
-                            </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mzm.fxcumhuv.120x120" translatesAutoresizingMaskIntoConstraints="NO" id="ovk-jz-tEU">
                                 <rect key="frame" x="100" y="20" width="120" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cJt-Tj-Kg0" firstAttribute="centerX" secondItem="HSY-rP-nOd" secondAttribute="centerX" id="tc0-EV-CUr"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wKN-Po-S5U"/>
-                    <connections>
-                        <outlet property="email" destination="HSY-rP-nOd" id="ABs-lT-JW4"/>
-                        <outlet property="password" destination="cJt-Tj-Kg0" id="sO5-y2-R8M"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYo-DT-r5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81y-kz-fVl">
-                                <rect key="frame" x="93" y="469" width="135" height="46"/>
+                                <rect key="frame" x="93" y="293" width="135" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -311,7 +261,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cg-R4-alH" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="20" y="448" width="280" height="30"/>
+                                <rect key="frame" x="20" y="272" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -394,71 +344,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="42" y="370"/>
-        </scene>
-        <!--Signup View Controller-->
-        <scene sceneID="5ha-Yn-BE6">
-            <objects>
-                <viewController storyboardIdentifier="JHSignupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GCY-J8-qii" customClass="JHSignupViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bMC-Vc-fWr"/>
-                        <viewControllerLayoutGuide type="bottom" id="8Zt-li-gvJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fiz-an-ayj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7SN-fL-42d">
-                                <rect key="frame" x="50" y="232" width="220" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGW-r5-dpI">
-                                <rect key="frame" x="50" y="301" width="220" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="owS-YE-6n5">
-                                <rect key="frame" x="50" y="160" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Signup"/>
-                                    <segment title="Login"/>
-                                </segments>
-                                <connections>
-                                    <action selector="switchToAuthentication:" destination="GCY-J8-qii" eventType="valueChanged" id="dJt-fs-ene"/>
-                                </connections>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gby-OL-eJq">
-                                <rect key="frame" x="224" y="377" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="signup:" destination="GCY-J8-qii" eventType="touchUpInside" id="IAf-Sb-m0k"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mzm.fxcumhuv.120x120" translatesAutoresizingMaskIntoConstraints="NO" id="phc-XB-JNc">
-                                <rect key="frame" x="100" y="20" width="120" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yGW-r5-dpI" firstAttribute="centerX" secondItem="7SN-fL-42d" secondAttribute="centerX" id="ce3-qO-RWj"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="DOp-ik-4Sv"/>
-                    <connections>
-                        <outlet property="email" destination="7SN-fL-42d" id="SaA-cm-oOF"/>
-                        <outlet property="password" destination="yGW-r5-dpI" id="lzh-9n-Uth"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nSB-B0-hyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="42" y="-1080"/>
         </scene>
     </scenes>
     <resources>

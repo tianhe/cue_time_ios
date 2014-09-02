@@ -27,7 +27,7 @@
 		ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B581921966900BC8EC1 /* JHAppDelegate.m */; };
 		ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */; };
 		ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */; };
-		ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHInviteViewController.m */; };
+		ECA57B621921966900BC8EC1 /* JHOrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */; };
 		ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */; };
 		ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B661921966900BC8EC1 /* Images.xcassets */; };
 		ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B6D1921966900BC8EC1 /* XCTest.framework */; };
@@ -48,8 +48,14 @@
 		ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */; };
 		ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA61929AAE900BC8EC1 /* JHConstants.m */; };
 		ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */; };
+		ECC75B7119ABFA0900D2B559 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7019ABFA0900D2B559 /* Parse.framework */; };
+		ECC75B7319ABFA5000D2B559 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */; };
+		ECC75B7519ABFA6A00D2B559 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */; };
+		ECC75B7719ABFA8000D2B559 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7619ABFA8000D2B559 /* libz.dylib */; };
+		ECC75B7919ABFA8D00D2B559 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7819ABFA8D00D2B559 /* QuartzCore.framework */; };
+		ECC75B7B19ABFA9D00D2B559 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7A19ABFA9D00D2B559 /* StoreKit.framework */; };
+		ECC75B7F19AC12F800D2B559 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7E19AC12F800D2B559 /* FacebookSDK.framework */; };
 		ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */; };
-		ECED81F81945593100076530 /* JHSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */; };
 		FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265AA824FC3F4D4F917F1C3B /* libPods-CueTime.a */; };
 /* End PBXBuildFile section */
 
@@ -102,8 +108,8 @@
 		ECA57B581921966900BC8EC1 /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
 		ECA57B5B1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		ECA57B5E1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		ECA57B601921966900BC8EC1 /* JHInviteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHInviteViewController.h; sourceTree = "<group>"; };
-		ECA57B611921966900BC8EC1 /* JHInviteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHInviteViewController.m; sourceTree = "<group>"; };
+		ECA57B601921966900BC8EC1 /* JHOrganizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHOrganizeViewController.h; sourceTree = "<group>"; };
+		ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHOrganizeViewController.m; sourceTree = "<group>"; };
 		ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHChallengeViewController.h; sourceTree = "<group>"; };
 		ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHChallengeViewController.m; sourceTree = "<group>"; };
 		ECA57B661921966900BC8EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -118,8 +124,6 @@
 		ECA57B871921983100BC8EC1 /* JHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProfileViewController.m; sourceTree = "<group>"; };
 		ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAuthenticationViewController.h; sourceTree = "<group>"; };
 		ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAuthenticationViewController.m; sourceTree = "<group>"; };
-		ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSignupViewController.m; sourceTree = "<group>"; };
-		ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSignupViewController.h; sourceTree = "<group>"; };
 		ECA57B901929142F00BC8EC1 /* JHAuthenticationNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAuthenticationNetworkHelper.h; sourceTree = "<group>"; };
 		ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAuthenticationNetworkHelper.m; sourceTree = "<group>"; };
 		ECA57B9419291C5400BC8EC1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -135,6 +139,13 @@
 		ECA57BA61929AAE900BC8EC1 /* JHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHConstants.m; sourceTree = "<group>"; };
 		ECBB8C19197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CustomTransformer.h"; sourceTree = "<group>"; };
 		ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CustomTransformer.m"; sourceTree = "<group>"; };
+		ECC75B7019ABFA0900D2B559 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECC75B7619ABFA8000D2B559 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		ECC75B7819ABFA8D00D2B559 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ECC75B7A19ABFA9D00D2B559 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ECC75B7E19AC12F800D2B559 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		ECE6B23B1946CD3600289CE2 /* AFNetworking+Promises.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+Promises.h"; sourceTree = "<group>"; };
 		ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+Promises.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,13 +155,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC75B7B19ABFA9D00D2B559 /* StoreKit.framework in Frameworks */,
+				ECC75B7919ABFA8D00D2B559 /* QuartzCore.framework in Frameworks */,
+				ECC75B7719ABFA8000D2B559 /* libz.dylib in Frameworks */,
+				ECC75B7519ABFA6A00D2B559 /* CoreLocation.framework in Frameworks */,
+				ECA57B9919291C5F00BC8EC1 /* CFNetwork.framework in Frameworks */,
+				ECC75B7319ABFA5000D2B559 /* AudioToolbox.framework in Frameworks */,
 				ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */,
 				ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */,
 				ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */,
 				ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */,
+				ECC75B7119ABFA0900D2B559 /* Parse.framework in Frameworks */,
 				ECA57B9B19291C6700BC8EC1 /* SystemConfiguration.framework in Frameworks */,
-				ECA57B9919291C5F00BC8EC1 /* CFNetwork.framework in Frameworks */,
 				ECA57B9719291C5A00BC8EC1 /* Security.framework in Frameworks */,
+				ECC75B7F19AC12F800D2B559 /* FacebookSDK.framework in Frameworks */,
 				ECA57B9519291C5400BC8EC1 /* MobileCoreServices.framework in Frameworks */,
 				FBB39B524BDD4B359B2E9F54 /* libPods-CueTime.a in Frameworks */,
 			);
@@ -222,6 +240,13 @@
 		ECA57B471921966900BC8EC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECC75B7E19AC12F800D2B559 /* FacebookSDK.framework */,
+				ECC75B7A19ABFA9D00D2B559 /* StoreKit.framework */,
+				ECC75B7819ABFA8D00D2B559 /* QuartzCore.framework */,
+				ECC75B7619ABFA8000D2B559 /* libz.dylib */,
+				ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */,
+				ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */,
+				ECC75B7019ABFA0900D2B559 /* Parse.framework */,
 				ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */,
 				ECA57B9A19291C6700BC8EC1 /* SystemConfiguration.framework */,
 				ECA57B9819291C5F00BC8EC1 /* CFNetwork.framework */,
@@ -288,17 +313,15 @@
 		ECA57B8F192913E200BC8EC1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ECA57B601921966900BC8EC1 /* JHInviteViewController.h */,
-				ECA57B611921966900BC8EC1 /* JHInviteViewController.m */,
 				ECA3276D197DD2430076F4EE /* Games */,
+				ECA57B601921966900BC8EC1 /* JHOrganizeViewController.h */,
+				ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */,
 				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
 				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
 				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
 				ECA57B871921983100BC8EC1 /* JHProfileViewController.m */,
 				ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */,
 				ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */,
-				ECA57B8E1921CB3C00BC8EC1 /* JHSignupViewController.h */,
-				ECA57B8C1921CB1600BC8EC1 /* JHSignupViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -525,7 +548,6 @@
 				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
 				ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */,
 				ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */,
-				ECED81F81945593100076530 /* JHSignupViewController.m in Sources */,
 				ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */,
 				EC5384ED197B879B006AA0EC /* JHGame.m in Sources */,
 				ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */,
@@ -546,7 +568,7 @@
 				ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */,
 				ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */,
 				ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */,
-				ECA57B621921966900BC8EC1 /* JHInviteViewController.m in Sources */,
+				ECA57B621921966900BC8EC1 /* JHOrganizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +706,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/tianhe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
 				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";
@@ -701,6 +728,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/tianhe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
 				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";

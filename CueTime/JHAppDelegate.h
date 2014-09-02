@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JHAuthenticationViewController.h"
 
 @interface JHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) JHAuthenticationViewController *authController;
+@property (nonatomic, strong) UITabBarController *tabBarController;
+
 - (void)initiateTabBarController;
-- (void)initiateSignupController;
 - (void)initiateAuthController;
+- (void)logout;
+
+
 @end

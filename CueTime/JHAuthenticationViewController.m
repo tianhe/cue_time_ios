@@ -20,18 +20,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.email.delegate = self;
-    self.password.delegate = self;
+    
+    FBLoginView *loginView = [[FBLoginView alloc] initWithReadPermissions:@[@"public_profile", @"email", @"user_friends"]];
+    CGRect frame = loginView.frame;
+    frame.origin = CGPointMake( ([UIScreen mainScreen].bounds.size.width - frame.size.width)/2, [UIScreen mainScreen].bounds.size.height/2);
+    loginView.frame = frame;
+
+    [self.view addSubview:loginView];
+    loginView.delegate = self;
 }
 
-- (IBAction)login:(id)sender
+- (void)authenticateOnServerSide:(NSString*)accessToken
 {
-    NSDictionary *params = @{@"user" :
-                                 @{@"email": self.email.text,
-                                   @"password": self.password.text}
-                             };
-    
-    Promise *promise = [JHAuthenticationNetworkHelper authenticateUserWithParams:params];
+    Promise *promise = [JHAuthenticationNetworkHelper authenticateUserWithParams:@{@"user": @{@"fb_access_token":accessToken}}];
     
     promise.then(^(NSDictionary *json){
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loggedIn"];
@@ -49,21 +50,21 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:json[@"error"][0] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
         [alert show];
     });
-    
 }
 
-- (IBAction)switchToSignup:(id)sender
-{
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
+}
+
+// Logged-in user experience
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
+    NSString *accessToken = [FBSession activeSession].accessTokenData.accessToken;
+    [self authenticateOnServerSide:accessToken];
+}
+
+// Logged-out user experience
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     JHAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate initiateSignupController];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [self.email resignFirstResponder];
-    [self.password resignFirstResponder];
-    
-    return YES;
+    [delegate logout];
 }
 
 @end
