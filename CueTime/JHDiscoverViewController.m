@@ -6,25 +6,33 @@
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import "JHUpcomingViewController.h"
+#import "JHDiscoverViewController.h"
+#import "JHDiscoverTableViewCell.h"
 #import "JHGame.h"
 #import "JHGameNetworkHelper.h"
-#import "JHUpcomingTableViewCell.h"
 #import "JHAttendanceNetworkHelper.h"
+#import "JHDiscoverTableView.h"
 
-@interface JHUpcomingViewController ()
+@interface JHDiscoverViewController ()
+
+@property(nonatomic, strong) JHDiscoverTableView* tableView;
 
 @end
 
-@implementation JHUpcomingViewController
+@implementation JHDiscoverViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     CGRect bounds = self.view.bounds;
-    bounds.origin.y = 100;
-    self.tableView.frame = bounds;
+    bounds.origin.y = 40;
+    bounds.size.height = bounds.size.height - 40;
+    self.tableView = [[JHDiscoverTableView alloc] initWithFrame:bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    [self.view addSubview:self.tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -60,9 +68,9 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    JHUpcomingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"upcomingTableViewCell"];
+    JHDiscoverTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"upcomingTableViewCell"];
     if (cell == nil) {
-        cell = [[JHUpcomingTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"upcomingTableViewCell"];
+        cell = [[JHDiscoverTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"upcomingTableViewCell"];
     }
     JHGame *game = (JHGame *)[self.games objectAtIndex:indexPath.row];
     [cell updateWithGame:game];
@@ -80,7 +88,7 @@
 - (void) acceptGameButtonWasTapped:(UIButton *)sender
 {
 
-    NSDictionary *params = @{@"game_id": [NSString stringWithFormat:@"%d", sender.tag],
+    NSDictionary *params = @{@"game_id": [NSString stringWithFormat:@"%ld", sender.tag],
                              @"user_id": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]
                             };
     

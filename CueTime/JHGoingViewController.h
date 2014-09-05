@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import "JHChallengeViewController.h"
-
-@interface JHGoingViewController : UITableViewController
+@interface JHGoingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray* games;
 

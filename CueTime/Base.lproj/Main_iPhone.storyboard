@@ -4,10 +4,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Organize View Controller - Invite-->
+        <!--Going View Controller - Going-->
+        <scene sceneID="98v-jf-UtJ">
+            <objects>
+                <viewController id="4Uz-oo-3za" customClass="JHGoingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t5e-KW-JCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="1i1-Ov-wJo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6wY-Kt-afr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Going" id="TXW-1C-fkG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0Y-qW-cH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="-3"/>
+        </scene>
+        <!--Organize View Controller - Organizer-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="Invite" id="CZ4-MO-1fc" customClass="JHOrganizeViewController" sceneMemberID="viewController">
+                <viewController title="Organizer" id="CZ4-MO-1fc" customClass="JHOrganizeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s9W-kb-ARv"/>
                         <viewControllerLayoutGuide type="bottom" id="dtj-EO-iXF"/>
@@ -16,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-nF-RSO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-nF-RSO" customClass="JHOr">
                                 <rect key="frame" x="0.0" y="-18" width="320" height="586"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -125,7 +144,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Organize" id="FVr-Lb-7We"/>
+                    <tabBarItem key="tabBarItem" title="Organize" image="first" id="FVr-Lb-7We"/>
                     <navigationItem key="navigationItem" id="x6v-sv-ebc"/>
                     <connections>
                         <outlet property="activity" destination="yhm-ni-4t1" id="Bka-Jv-WaO"/>
@@ -139,40 +158,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="-646"/>
+            <point key="canvasLocation" x="753" y="708"/>
         </scene>
-        <!--Challenge View Controller - Second-->
+        <!--Discover View Controller - Discover-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="JHChallengeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FgS-U6-xeU"/>
-                        <viewControllerLayoutGuide type="bottom" id="stI-4g-hlJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-2c-U9W">
-                                <rect key="frame" x="20" y="39" width="280" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Upcoming"/>
-                                    <segment title="Going"/>
-                                    <segment title="Organizing"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="second" id="Z7h-1E-pvt"/>
-                    <connections>
-                        <outlet property="eventControl" destination="tzV-2c-U9W" id="gSI-9t-dzl"/>
-                    </connections>
+                <viewController title="Discover" id="QUy-BD-bpt" customClass="JHDiscoverViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="second" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="52"/>
+            <point key="canvasLocation" x="753" y="-700"/>
         </scene>
         <!--Authentication View Controller-->
         <scene sceneID="hY8-hp-0N2">
@@ -281,48 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4e-vk-Lop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1416"/>
-        </scene>
-        <!--Chat View Controller - Chat-->
-        <scene sceneID="FpF-3a-wSi">
-            <objects>
-                <viewController id="mWB-LO-ZC3" customClass="JHChatViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gML-bs-MAk"/>
-                        <viewControllerLayoutGuide type="bottom" id="sZw-hR-Jtc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="j6H-yu-BEC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPb-kJ-Z8o">
-                                <rect key="frame" x="20" y="473" width="222" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2Z-YI-BH3">
-                                <rect key="frame" x="254" y="473" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-4X-MD1">
-                                <rect key="frame" x="20" y="84" width="280" height="376"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="third" id="LLo-Wd-ygj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JiO-k0-slF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="673" y="743"/>
+            <point key="canvasLocation" x="753" y="1392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -336,8 +291,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="4Uz-oo-3za" kind="relationship" relationship="viewControllers" id="lR2-XY-4F5"/>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="fUu-eD-oal"/>
-                        <segue destination="mWB-LO-ZC3" kind="relationship" relationship="viewControllers" id="tAt-cJ-a4S"/>
                         <segue destination="SbC-4L-9vs" kind="relationship" relationship="viewControllers" id="ZHP-Sf-pfd"/>
                     </connections>
                 </tabBarController>
@@ -347,9 +302,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="mzm.fxcumhuv.120x120" width="120" height="120"/>
         <image name="second" width="30" height="30"/>
-        <image name="third" width="16" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import "JHUpcomingTableViewCell.h"
+#import "JHDiscoverTableViewCell.h"
 
-@implementation JHUpcomingTableViewCell
+@implementation JHDiscoverTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

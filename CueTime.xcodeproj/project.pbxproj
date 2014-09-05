@@ -13,10 +13,9 @@
 		EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */; };
 		EC5384ED197B879B006AA0EC /* JHGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384EC197B879B006AA0EC /* JHGame.m */; };
 		EC7CAD35199884960013803A /* JHAttendanceNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */; };
-		ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */; };
+		ECA32766197DD2220076F4EE /* JHDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32765197DD2220076F4EE /* JHDiscoverViewController.m */; };
 		ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32768197DD22B0076F4EE /* JHGoingViewController.m */; };
-		ECA3276C197DD23B0076F4EE /* JHOrganizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */; };
-		ECA32770197DED120076F4EE /* JHUpcomingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */; };
+		ECA32770197DED120076F4EE /* JHDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */; };
 		ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */; };
 		ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */; };
 		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
@@ -28,14 +27,12 @@
 		ECA57B5C1921966900BC8EC1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5A1921966900BC8EC1 /* Main_iPhone.storyboard */; };
 		ECA57B5F1921966900BC8EC1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B5D1921966900BC8EC1 /* Main_iPad.storyboard */; };
 		ECA57B621921966900BC8EC1 /* JHOrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */; };
-		ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */; };
 		ECA57B671921966900BC8EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B661921966900BC8EC1 /* Images.xcassets */; };
 		ECA57B6E1921966900BC8EC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B6D1921966900BC8EC1 /* XCTest.framework */; };
 		ECA57B6F1921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B701921966900BC8EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4C1921966900BC8EC1 /* UIKit.framework */; };
 		ECA57B781921966900BC8EC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA57B761921966900BC8EC1 /* InfoPlist.strings */; };
 		ECA57B7A1921966900BC8EC1 /* CueTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B791921966900BC8EC1 /* CueTimeTests.m */; };
-		ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B84192197A000BC8EC1 /* JHChatViewController.m */; };
 		ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B871921983100BC8EC1 /* JHProfileViewController.m */; };
 		ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B8A19219E7E00BC8EC1 /* JHAuthenticationViewController.m */; };
 		ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B911929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m */; };
@@ -48,6 +45,8 @@
 		ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */; };
 		ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA61929AAE900BC8EC1 /* JHConstants.m */; };
 		ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */; };
+		ECBD498C19B6A7C100465724 /* JHDiscoverTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD498B19B6A7C100465724 /* JHDiscoverTableView.m */; };
+		ECBD498F19B6A7D300465724 /* JHGoingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD498E19B6A7D300465724 /* JHGoingTableView.m */; };
 		ECC75B7119ABFA0900D2B559 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7019ABFA0900D2B559 /* Parse.framework */; };
 		ECC75B7319ABFA5000D2B559 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */; };
 		ECC75B7519ABFA6A00D2B559 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */; };
@@ -84,14 +83,12 @@
 		EC5384EC197B879B006AA0EC /* JHGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGame.m; sourceTree = "<group>"; };
 		EC7CAD33199884960013803A /* JHAttendanceNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAttendanceNetworkHelper.h; sourceTree = "<group>"; };
 		EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAttendanceNetworkHelper.m; sourceTree = "<group>"; };
-		ECA32764197DD2220076F4EE /* JHUpcomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingViewController.h; sourceTree = "<group>"; };
-		ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingViewController.m; sourceTree = "<group>"; };
+		ECA32764197DD2220076F4EE /* JHDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverViewController.h; sourceTree = "<group>"; };
+		ECA32765197DD2220076F4EE /* JHDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDiscoverViewController.m; sourceTree = "<group>"; };
 		ECA32767197DD22B0076F4EE /* JHGoingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingViewController.h; sourceTree = "<group>"; };
 		ECA32768197DD22B0076F4EE /* JHGoingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingViewController.m; sourceTree = "<group>"; };
-		ECA3276A197DD23B0076F4EE /* JHOrganizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOrganizingViewController.h; sourceTree = "<group>"; };
-		ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOrganizingViewController.m; sourceTree = "<group>"; };
-		ECA3276E197DED120076F4EE /* JHUpcomingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUpcomingTableViewCell.h; sourceTree = "<group>"; };
-		ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUpcomingTableViewCell.m; sourceTree = "<group>"; };
+		ECA3276E197DED120076F4EE /* JHDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDiscoverTableViewCell.m; sourceTree = "<group>"; };
 		ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingTableViewCell.h; sourceTree = "<group>"; };
 		ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingTableViewCell.m; sourceTree = "<group>"; };
 		ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOrganizingTableViewCell.h; sourceTree = "<group>"; };
@@ -110,16 +107,12 @@
 		ECA57B5E1921966900BC8EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		ECA57B601921966900BC8EC1 /* JHOrganizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHOrganizeViewController.h; sourceTree = "<group>"; };
 		ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHOrganizeViewController.m; sourceTree = "<group>"; };
-		ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHChallengeViewController.h; sourceTree = "<group>"; };
-		ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHChallengeViewController.m; sourceTree = "<group>"; };
 		ECA57B661921966900BC8EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECA57B6C1921966900BC8EC1 /* CueTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA57B6D1921966900BC8EC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		ECA57B751921966900BC8EC1 /* CueTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CueTimeTests-Info.plist"; sourceTree = "<group>"; };
 		ECA57B771921966900BC8EC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECA57B791921966900BC8EC1 /* CueTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CueTimeTests.m; sourceTree = "<group>"; };
-		ECA57B83192197A000BC8EC1 /* JHChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChatViewController.h; sourceTree = "<group>"; };
-		ECA57B84192197A000BC8EC1 /* JHChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChatViewController.m; sourceTree = "<group>"; };
 		ECA57B861921983100BC8EC1 /* JHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProfileViewController.h; sourceTree = "<group>"; };
 		ECA57B871921983100BC8EC1 /* JHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProfileViewController.m; sourceTree = "<group>"; };
 		ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAuthenticationViewController.h; sourceTree = "<group>"; };
@@ -139,6 +132,10 @@
 		ECA57BA61929AAE900BC8EC1 /* JHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHConstants.m; sourceTree = "<group>"; };
 		ECBB8C19197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CustomTransformer.h"; sourceTree = "<group>"; };
 		ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CustomTransformer.m"; sourceTree = "<group>"; };
+		ECBD498A19B6A7C100465724 /* JHDiscoverTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverTableView.h; sourceTree = "<group>"; };
+		ECBD498B19B6A7C100465724 /* JHDiscoverTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDiscoverTableView.m; sourceTree = "<group>"; };
+		ECBD498D19B6A7D300465724 /* JHGoingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingTableView.h; sourceTree = "<group>"; };
+		ECBD498E19B6A7D300465724 /* JHGoingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingTableView.m; sourceTree = "<group>"; };
 		ECC75B7019ABFA0900D2B559 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -191,29 +188,18 @@
 		EC5384E71978BAC8006AA0EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ECA3276E197DED120076F4EE /* JHUpcomingTableViewCell.h */,
-				ECA3276F197DED120076F4EE /* JHUpcomingTableViewCell.m */,
+				ECA3276E197DED120076F4EE /* JHDiscoverTableViewCell.h */,
+				ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */,
 				ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */,
 				ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */,
 				ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */,
 				ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */,
+				ECBD498A19B6A7C100465724 /* JHDiscoverTableView.h */,
+				ECBD498B19B6A7C100465724 /* JHDiscoverTableView.m */,
+				ECBD498D19B6A7D300465724 /* JHGoingTableView.h */,
+				ECBD498E19B6A7D300465724 /* JHGoingTableView.m */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		ECA3276D197DD2430076F4EE /* Games */ = {
-			isa = PBXGroup;
-			children = (
-				ECA57B631921966900BC8EC1 /* JHChallengeViewController.h */,
-				ECA57B641921966900BC8EC1 /* JHChallengeViewController.m */,
-				ECA32764197DD2220076F4EE /* JHUpcomingViewController.h */,
-				ECA32765197DD2220076F4EE /* JHUpcomingViewController.m */,
-				ECA32767197DD22B0076F4EE /* JHGoingViewController.h */,
-				ECA32768197DD22B0076F4EE /* JHGoingViewController.m */,
-				ECA3276A197DD23B0076F4EE /* JHOrganizingViewController.h */,
-				ECA3276B197DD23B0076F4EE /* JHOrganizingViewController.m */,
-			);
-			name = Games;
 			sourceTree = "<group>";
 		};
 		ECA57B3C1921966800BC8EC1 = {
@@ -313,11 +299,12 @@
 		ECA57B8F192913E200BC8EC1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ECA3276D197DD2430076F4EE /* Games */,
+				ECA32764197DD2220076F4EE /* JHDiscoverViewController.h */,
+				ECA32765197DD2220076F4EE /* JHDiscoverViewController.m */,
+				ECA32767197DD22B0076F4EE /* JHGoingViewController.h */,
+				ECA32768197DD22B0076F4EE /* JHGoingViewController.m */,
 				ECA57B601921966900BC8EC1 /* JHOrganizeViewController.h */,
 				ECA57B611921966900BC8EC1 /* JHOrganizeViewController.m */,
-				ECA57B83192197A000BC8EC1 /* JHChatViewController.h */,
-				ECA57B84192197A000BC8EC1 /* JHChatViewController.m */,
 				ECA57B861921983100BC8EC1 /* JHProfileViewController.h */,
 				ECA57B871921983100BC8EC1 /* JHProfileViewController.m */,
 				ECA57B8919219E7E00BC8EC1 /* JHAuthenticationViewController.h */,
@@ -545,26 +532,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBD498C19B6A7C100465724 /* JHDiscoverTableView.m in Sources */,
 				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
 				ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */,
 				ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */,
-				ECA32766197DD2220076F4EE /* JHUpcomingViewController.m in Sources */,
+				ECA32766197DD2220076F4EE /* JHDiscoverViewController.m in Sources */,
 				EC5384ED197B879B006AA0EC /* JHGame.m in Sources */,
 				ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */,
 				ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */,
-				ECA57B651921966900BC8EC1 /* JHChallengeViewController.m in Sources */,
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
 				EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */,
 				EC41D7B9199D96D10026BB01 /* JHAttendance.m in Sources */,
 				EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */,
-				ECA57B85192197A000BC8EC1 /* JHChatViewController.m in Sources */,
-				ECA3276C197DD23B0076F4EE /* JHOrganizingViewController.m in Sources */,
 				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
+				ECBD498F19B6A7D300465724 /* JHGoingTableView.m in Sources */,
 				EC7CAD35199884960013803A /* JHAttendanceNetworkHelper.m in Sources */,
 				ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */,
-				ECA32770197DED120076F4EE /* JHUpcomingTableViewCell.m in Sources */,
+				ECA32770197DED120076F4EE /* JHDiscoverTableViewCell.m in Sources */,
 				ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */,
 				ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */,
 				ECE6B23D1946CD3600289CE2 /* AFNetworking+Promises.m in Sources */,

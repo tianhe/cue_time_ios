@@ -12,8 +12,11 @@
 #import "JHGameNetworkHelper.h"
 #import "JHAttendanceNetworkHelper.h"
 #import "JHAttendance.h"
+#import "JHGoingTableView.h"
 
 @interface JHGoingViewController ()
+
+@property(nonatomic, strong) JHGoingTableView *tableView;
 
 @end
 
@@ -22,10 +25,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     CGRect bounds = self.view.bounds;
-    bounds.origin.y = 100;
-    self.tableView.frame = bounds;    
+    bounds.origin.y = 40;
+    bounds.size.height = bounds.size.height - 40;
+    self.tableView = [[JHGoingTableView alloc] initWithFrame:bounds];
+    self.tableView.frame = bounds;
+
+    [self.view addSubview:self.tableView];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -84,7 +92,7 @@
 
 - (void)didTapCancelAttendance:(UIButton *)sender
 {
-    NSString *attendanceId = [NSString stringWithFormat:@"%d", sender.tag];
+    NSString *attendanceId = [NSString stringWithFormat:@"%ld", sender.tag];
         
     [JHAttendanceNetworkHelper deleteAttendanceWithID:attendanceId].then(^(NSArray *json){
         [self.tableView reloadData];

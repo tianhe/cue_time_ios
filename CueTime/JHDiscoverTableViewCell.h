@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JHGame.h"
 
-@interface JHUpcomingTableViewCell : UITableViewCell
+@interface JHDiscoverTableViewCell : UITableViewCell
 
 - (void) updateWithGame:(JHGame *)game;
 
