@@ -51,6 +51,10 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 The MIT License in plain English: http://www.touch-code-magazine.com/JSONModel/MITLicense
 
 
+## OMGHTTPURLRQ
+
+See README.markdown for full license text.
+
 ## PromiseKit
 
 Copyright 2014 Max Howell <mxcl@me.com>

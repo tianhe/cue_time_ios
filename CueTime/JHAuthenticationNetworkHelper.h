@@ -11,6 +11,6 @@
 
 @interface JHAuthenticationNetworkHelper : NSObject
 
-+ (Promise *)authenticateUserWithParams:(NSDictionary *)params;
++ (PMKPromise *)authenticateUserWithParams:(NSDictionary *)params;
 
 @end

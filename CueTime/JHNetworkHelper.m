@@ -7,12 +7,12 @@
 //
 
 #import "JHNetworkHelper.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 #import "AFNetworking+Promises.h"
 
 @implementation JHNetworkHelper
 
-+ (Promise *)POST:(NSString *)url parameters:(NSDictionary *)params
++ (PMKPromise *)POST:(NSString *)url parameters:(NSDictionary *)params
 {
     NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] initWithDictionary:params];
     
@@ -25,7 +25,7 @@
     return [NSURLConnection POST:url formURLEncodedParameters:authenticatedParams];
 }
 
-+ (Promise *)GET:(NSString *)url
++ (PMKPromise *)GET:(NSString *)url
 {
     NSString *authenticationToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"authentication_token"];
     NSString *email = [[NSUserDefaults standardUserDefaults] objectForKey:@"email" ];
@@ -34,7 +34,7 @@
     return [NSURLConnection GET:getUrl];
 }
 
-+ (Promise *)PUT:(NSString *)url parameters:(NSDictionary *)params
++ (PMKPromise *)PUT:(NSString *)url parameters:(NSDictionary *)params
 {
     NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] initWithDictionary:params];
     
@@ -47,7 +47,7 @@
     
 }
 
-+ (Promise *)DELETE:(NSString *)url
++ (PMKPromise *)DELETE:(NSString *)url
 {
     NSMutableDictionary *authenticatedParams = [[NSMutableDictionary alloc] init];
 

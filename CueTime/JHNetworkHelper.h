@@ -10,8 +10,8 @@
 
 @interface JHNetworkHelper : NSObject
 
-+ (Promise *)POST:(NSString *)url parameters:(NSDictionary *)params;
-+ (Promise *)GET:(NSString *)url;
-+ (Promise *)PUT:(NSString *)url parameters:(NSDictionary *)params;
-+ (Promise *)DELETE:(NSString *)url;
++ (PMKPromise *)POST:(NSString *)url parameters:(NSDictionary *)params;
++ (PMKPromise *)GET:(NSString *)url;
++ (PMKPromise *)PUT:(NSString *)url parameters:(NSDictionary *)params;
++ (PMKPromise *)DELETE:(NSString *)url;
 @end

@@ -7,12 +7,12 @@
 //
 
 #import "JHGoingViewController.h"
-#import "JHGoingTableViewCell.h"
 #import "JHGame.h"
 #import "JHGameNetworkHelper.h"
 #import "JHAttendanceNetworkHelper.h"
 #import "JHAttendance.h"
 #import "JHGoingTableView.h"
+#import "CueTime-Swift.h"
 
 @interface JHGoingViewController ()
 
@@ -83,7 +83,7 @@
     JHGame *game = (JHGame *)[self.games objectAtIndex:indexPath.row];
     JHAttendance *attendance = [self attendanceFromGame:game];
     
-    [cell updateWithGame:game andAttendance:attendance];
+    [cell updateWithGame:game attendance:attendance];
     
     [cell.button addTarget:self action:@selector(didTapCancelAttendance:) forControlEvents:UIControlEventTouchUpInside];
     

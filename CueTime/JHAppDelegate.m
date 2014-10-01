@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 JiHeCo. All rights reserved.
 //
 
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
 
 #import "JHAppDelegate.h"
 #import "JHAuthenticationViewController.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 
 @implementation JHAppDelegate
 
@@ -37,12 +37,12 @@
         [self initiateAuthController];
     }
 
-    [Parse setApplicationId:@"FeZaDJXPb4Mnai7uvNQ3gQNYMJF8inG358rcSgls"
-                  clientKey:@"3E4lBIUJvM4fHz5oX3MsUSiwq2AJyqoY0IZCJmBH"];
-    
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
-     UIRemoteNotificationTypeAlert|
-     UIRemoteNotificationTypeSound];
+//    [Parse setApplicationId:@"FeZaDJXPb4Mnai7uvNQ3gQNYMJF8inG358rcSgls"
+//                  clientKey:@"3E4lBIUJvM4fHz5oX3MsUSiwq2AJyqoY0IZCJmBH"];
+//    
+//    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+//     UIRemoteNotificationTypeAlert|
+//     UIRemoteNotificationTypeSound];
 
     return YES;
 }
@@ -93,14 +93,14 @@
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation saveInBackground];
+//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//    [currentInstallation setDeviceTokenFromData:deviceToken];
+//    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
+//    [PFPush handlePush:userInfo];
 }
 
 - (BOOL)application:(UIApplication *)application

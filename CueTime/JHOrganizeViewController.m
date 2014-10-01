@@ -8,7 +8,7 @@
 
 #import "JHOrganizeViewController.h"
 #import "JHGameNetworkHelper.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 
 @interface JHOrganizeViewController ()
 
@@ -39,7 +39,7 @@
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    [dateFormatter setDateFormat:kDisplayDateFormat];
+    [dateFormatter setDateFormat:[JHConstants kDisplayDateFormat]];
 
     self.startTime.text = [dateFormatter stringFromDate:picker.date];
 }
@@ -62,7 +62,7 @@
                                        @"location": self.location.text
                                        } };
     
-    Promise *promise = [JHGameNetworkHelper createGameWithParams:gameParams];
+    PMKPromise *promise = [JHGameNetworkHelper createGameWithParams:gameParams];
 
     promise.then(^(NSDictionary *json){
         NSLog(@"Update Successful");

@@ -1,2 +1,2 @@
-PODS_CUETIME_PROMISEKIT_GCC_PREPROCESSOR_DEFINITIONS = $(inherited) PMK_CORELOCATION=1 $(inherited) PMK_FOUNDATION=1 $(inherited) PMK_MAPKIT=1 $(inherited) PMK_SOCIAL=1 $(inherited) PMK_STOREKIT=1 $(inherited) PMK_UIKIT=1
-PODS_CUETIME_PROMISEKIT_OTHER_LDFLAGS = -framework Accounts -framework CoreLocation -framework Foundation -framework MapKit -framework Social -framework StoreKit -framework UIKit -weak_framework AssetsLibrary
+PODS_CUETIME_PROMISEKIT_GCC_PREPROCESSOR_DEFINITIONS = $(inherited) PMK_NSNOTIFICATIONCENTER=1 $(inherited) PMK_NSURLCONNECTION=1 $(inherited) PMK_PAUSE=1 $(inherited) PMK_UIACTIONSHEET=1 $(inherited) PMK_UIALERTVIEW=1 $(inherited) PMK_UIVIEW=1 $(inherited) PMK_UIVIEWCONTROLLER=1 $(inherited) PMK_UNTIL=1 $(inherited) PMK_WHEN=1
+PODS_CUETIME_PROMISEKIT_OTHER_LDFLAGS = -framework Foundation -framework UIKit -weak_framework AssetsLibrary

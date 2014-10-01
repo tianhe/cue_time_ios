@@ -8,23 +8,23 @@
 
 #import "JHUserNetworkHelper.h"
 #import "JHUser.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 #import "AFNetworking+Promises.h"
 
 @implementation JHUserNetworkHelper
 
-+ (Promise *)getUserWithId:(NSNumber *)userId{
-    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@.json", kAPIBaseURL, userId];
++ (PMKPromise *)getUserWithId:(NSNumber *)userId{
+    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@.json", [JHConstants kAPIBaseURL], userId];
     return [JHNetworkHelper GET:userAPIUrl];
 }
 
-+ (Promise *)createUserWithParams:(NSDictionary *)params{
-    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users", kAPIBaseURL];
++ (PMKPromise *)createUserWithParams:(NSDictionary *)params{
+    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users", [JHConstants kAPIBaseURL]];
     return [JHNetworkHelper POST:userAPIUrl parameters:params];
 }
 
-+ (Promise *)updateUserWithParams:(NSDictionary *)params withID:(NSString *)userId{
-    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@", kAPIBaseURL, userId];
++ (PMKPromise *)updateUserWithParams:(NSDictionary *)params withID:(NSString *)userId{
+    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/users/%@", [JHConstants kAPIBaseURL], userId];
     return [JHNetworkHelper PUT:userAPIUrl parameters:params];
 }
 

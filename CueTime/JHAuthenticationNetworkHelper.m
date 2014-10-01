@@ -7,14 +7,14 @@
 //
 
 #import "JHAuthenticationNetworkHelper.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 #import "JHUser.h"
 #import "AFNetworking+Promises.h"
 
 @implementation JHAuthenticationNetworkHelper
 
-+ (Promise *)authenticateUserWithParams:(NSDictionary *)params{
-    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/authentications", kAPIBaseURL];
++ (PMKPromise *)authenticateUserWithParams:(NSDictionary *)params{
+    NSString *userAPIUrl = [NSString stringWithFormat:@"http://%@/v1/authentications", [JHConstants kAPIBaseURL]];
     return [JHNetworkHelper POST:userAPIUrl parameters:params];
 }
 

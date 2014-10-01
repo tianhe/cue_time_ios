@@ -1,1 +1,1 @@
-../../PromiseKit/PromiseKit/Promise.h
+../../PromiseKit/objc/PromiseKit/Promise.h

@@ -13,10 +13,12 @@
 		EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384E9197B7751006AA0EC /* JHNetworkHelper.m */; };
 		EC5384ED197B879B006AA0EC /* JHGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5384EC197B879B006AA0EC /* JHGame.m */; };
 		EC7CAD35199884960013803A /* JHAttendanceNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */; };
+		EC9668B719DA2839005D7867 /* JHConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9668B619DA2839005D7867 /* JHConstants.swift */; };
+		EC9668B919DA5DA6005D7867 /* JHColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9668B819DA5DA6005D7867 /* JHColor.swift */; };
+		EC9668BB19DBA056005D7867 /* JHGoingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9668BA19DBA056005D7867 /* JHGoingTableViewCell.swift */; };
 		ECA32766197DD2220076F4EE /* JHDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32765197DD2220076F4EE /* JHDiscoverViewController.m */; };
 		ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32768197DD22B0076F4EE /* JHGoingViewController.m */; };
 		ECA32770197DED120076F4EE /* JHDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */; };
-		ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */; };
 		ECA32776197E0D940076F4EE /* JHOrganizingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */; };
 		ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B481921966900BC8EC1 /* Foundation.framework */; };
 		ECA57B4B1921966900BC8EC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B4A1921966900BC8EC1 /* CoreGraphics.framework */; };
@@ -43,11 +45,9 @@
 		ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA57B9C19291C6F00BC8EC1 /* CoreData.framework */; };
 		ECA57BA0192963EF00BC8EC1 /* JHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57B9F192963EF00BC8EC1 /* JHUser.m */; };
 		ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */; };
-		ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA57BA61929AAE900BC8EC1 /* JHConstants.m */; };
 		ECBB8C1B197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */; };
 		ECBD498C19B6A7C100465724 /* JHDiscoverTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD498B19B6A7C100465724 /* JHDiscoverTableView.m */; };
 		ECBD498F19B6A7D300465724 /* JHGoingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBD498E19B6A7D300465724 /* JHGoingTableView.m */; };
-		ECC75B7119ABFA0900D2B559 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7019ABFA0900D2B559 /* Parse.framework */; };
 		ECC75B7319ABFA5000D2B559 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7219ABFA5000D2B559 /* AudioToolbox.framework */; };
 		ECC75B7519ABFA6A00D2B559 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7419ABFA6A00D2B559 /* CoreLocation.framework */; };
 		ECC75B7719ABFA8000D2B559 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC75B7619ABFA8000D2B559 /* libz.dylib */; };
@@ -83,14 +83,16 @@
 		EC5384EC197B879B006AA0EC /* JHGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGame.m; sourceTree = "<group>"; };
 		EC7CAD33199884960013803A /* JHAttendanceNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAttendanceNetworkHelper.h; sourceTree = "<group>"; };
 		EC7CAD34199884960013803A /* JHAttendanceNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAttendanceNetworkHelper.m; sourceTree = "<group>"; };
+		EC9668B319DA2748005D7867 /* CueTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CueTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC9668B619DA2839005D7867 /* JHConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHConstants.swift; sourceTree = "<group>"; };
+		EC9668B819DA5DA6005D7867 /* JHColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHColor.swift; sourceTree = "<group>"; };
+		EC9668BA19DBA056005D7867 /* JHGoingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHGoingTableViewCell.swift; sourceTree = "<group>"; };
 		ECA32764197DD2220076F4EE /* JHDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverViewController.h; sourceTree = "<group>"; };
 		ECA32765197DD2220076F4EE /* JHDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDiscoverViewController.m; sourceTree = "<group>"; };
 		ECA32767197DD22B0076F4EE /* JHGoingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingViewController.h; sourceTree = "<group>"; };
 		ECA32768197DD22B0076F4EE /* JHGoingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingViewController.m; sourceTree = "<group>"; };
 		ECA3276E197DED120076F4EE /* JHDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverTableViewCell.h; sourceTree = "<group>"; };
 		ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDiscoverTableViewCell.m; sourceTree = "<group>"; };
-		ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGoingTableViewCell.h; sourceTree = "<group>"; };
-		ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGoingTableViewCell.m; sourceTree = "<group>"; };
 		ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOrganizingTableViewCell.h; sourceTree = "<group>"; };
 		ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOrganizingTableViewCell.m; sourceTree = "<group>"; };
 		ECA57B451921966900BC8EC1 /* CueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +130,6 @@
 		ECA57B9F192963EF00BC8EC1 /* JHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUser.m; sourceTree = "<group>"; };
 		ECA57BA2192964F500BC8EC1 /* JHUserNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUserNetworkHelper.h; sourceTree = "<group>"; };
 		ECA57BA3192964F500BC8EC1 /* JHUserNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUserNetworkHelper.m; sourceTree = "<group>"; };
-		ECA57BA51929AAE900BC8EC1 /* JHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHConstants.h; sourceTree = "<group>"; };
-		ECA57BA61929AAE900BC8EC1 /* JHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHConstants.m; sourceTree = "<group>"; };
 		ECBB8C19197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CustomTransformer.h"; sourceTree = "<group>"; };
 		ECBB8C1A197C73C90026CFE6 /* JSONValueTransformer+CustomTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CustomTransformer.m"; sourceTree = "<group>"; };
 		ECBD498A19B6A7C100465724 /* JHDiscoverTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDiscoverTableView.h; sourceTree = "<group>"; };
@@ -162,7 +162,6 @@
 				ECA57B491921966900BC8EC1 /* Foundation.framework in Frameworks */,
 				ECA57B4D1921966900BC8EC1 /* UIKit.framework in Frameworks */,
 				ECA57B9D19291C6F00BC8EC1 /* CoreData.framework in Frameworks */,
-				ECC75B7119ABFA0900D2B559 /* Parse.framework in Frameworks */,
 				ECA57B9B19291C6700BC8EC1 /* SystemConfiguration.framework in Frameworks */,
 				ECA57B9719291C5A00BC8EC1 /* Security.framework in Frameworks */,
 				ECC75B7F19AC12F800D2B559 /* FacebookSDK.framework in Frameworks */,
@@ -190,8 +189,7 @@
 			children = (
 				ECA3276E197DED120076F4EE /* JHDiscoverTableViewCell.h */,
 				ECA3276F197DED120076F4EE /* JHDiscoverTableViewCell.m */,
-				ECA32771197E0D890076F4EE /* JHGoingTableViewCell.h */,
-				ECA32772197E0D890076F4EE /* JHGoingTableViewCell.m */,
+				EC9668BA19DBA056005D7867 /* JHGoingTableViewCell.swift */,
 				ECA32774197E0D940076F4EE /* JHOrganizingTableViewCell.h */,
 				ECA32775197E0D940076F4EE /* JHOrganizingTableViewCell.m */,
 				ECBD498A19B6A7C100465724 /* JHDiscoverTableView.h */,
@@ -348,8 +346,9 @@
 			children = (
 				ECE6B23B1946CD3600289CE2 /* AFNetworking+Promises.h */,
 				ECE6B23C1946CD3600289CE2 /* AFNetworking+Promises.m */,
-				ECA57BA51929AAE900BC8EC1 /* JHConstants.h */,
-				ECA57BA61929AAE900BC8EC1 /* JHConstants.m */,
+				EC9668B619DA2839005D7867 /* JHConstants.swift */,
+				EC9668B819DA5DA6005D7867 /* JHColor.swift */,
+				EC9668B319DA2748005D7867 /* CueTime-Bridging-Header.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -533,18 +532,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBD498C19B6A7C100465724 /* JHDiscoverTableView.m in Sources */,
+				EC9668B919DA5DA6005D7867 /* JHColor.swift in Sources */,
 				ECA57B8B19219E7E00BC8EC1 /* JHAuthenticationViewController.m in Sources */,
 				ECA32769197DD22B0076F4EE /* JHGoingViewController.m in Sources */,
+				EC9668B719DA2839005D7867 /* JHConstants.swift in Sources */,
 				ECA57BA4192964F500BC8EC1 /* JHUserNetworkHelper.m in Sources */,
 				ECA32766197DD2220076F4EE /* JHDiscoverViewController.m in Sources */,
 				EC5384ED197B879B006AA0EC /* JHGame.m in Sources */,
-				ECA32773197E0D890076F4EE /* JHGoingTableViewCell.m in Sources */,
 				ECA57B881921983100BC8EC1 /* JHProfileViewController.m in Sources */,
 				ECA57B591921966900BC8EC1 /* JHAppDelegate.m in Sources */,
 				EC5384E3196CF153006AA0EC /* JHGameNetworkHelper.m in Sources */,
 				EC41D7B9199D96D10026BB01 /* JHAttendance.m in Sources */,
+				EC9668BB19DBA056005D7867 /* JHGoingTableViewCell.swift in Sources */,
 				EC5384EA197B7751006AA0EC /* JHNetworkHelper.m in Sources */,
-				ECA57BA71929AAE900BC8EC1 /* JHConstants.m in Sources */,
 				ECA57B551921966900BC8EC1 /* main.m in Sources */,
 				ECA57B921929142F00BC8EC1 /* JHAuthenticationNetworkHelper.m in Sources */,
 				ECBD498F19B6A7D300465724 /* JHGoingTableView.m in Sources */,
@@ -690,6 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -700,8 +701,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
 				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CueTime/CueTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -712,6 +717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -722,8 +728,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CueTime/CueTime-Prefix.pch";
 				INFOPLIST_FILE = "CueTime/CueTime-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CueTime/CueTime-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

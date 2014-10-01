@@ -32,7 +32,7 @@
 
 - (void)authenticateOnServerSide:(NSString*)accessToken
 {
-    Promise *promise = [JHAuthenticationNetworkHelper authenticateUserWithParams:@{@"user": @{@"fb_access_token":accessToken}}];
+    PMKPromise *promise = [JHAuthenticationNetworkHelper authenticateUserWithParams:@{@"user": @{@"fb_access_token":accessToken}}];
     
     promise.then(^(NSDictionary *json){
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loggedIn"];

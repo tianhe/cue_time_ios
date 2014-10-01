@@ -32,7 +32,7 @@
        @"gender": [self.gender titleForSegmentAtIndex:self.gender.selectedSegmentIndex]} };
     
     NSString *userID = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_id"];
-    Promise *promise = [JHUserNetworkHelper updateUserWithParams:userParams withID:userID];
+    PMKPromise *promise = [JHUserNetworkHelper updateUserWithParams:userParams withID:userID];
     
     promise.then(^(NSDictionary *json){
         NSLog(@"Update Successful");

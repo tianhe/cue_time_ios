@@ -7,19 +7,19 @@
 //
 
 #import "JSONValueTransformer+CustomTransformer.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 
 @implementation JSONValueTransformer (CustomTransformer)
 
 - (NSDate *)NSDateFromNSString:(NSString*)string {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:kAPIDateFormat];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];    
+    [formatter setDateFormat:[JHConstants kAPIDateFormat]];
     return [formatter dateFromString:string];
 }
 
 - (NSString *)JSONObjectFromNSDate:(NSDate *)date {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:kAPIDateFormat];
+    [formatter setDateFormat:[JHConstants kAPIDateFormat]];
     return [formatter stringFromDate:date];
 }
 

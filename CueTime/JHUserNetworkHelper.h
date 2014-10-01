@@ -11,7 +11,7 @@
 
 @interface JHUserNetworkHelper : JHNetworkHelper
 
-+ (Promise *)getUserWithId:(NSNumber *)userId;
-+ (Promise *)createUserWithParams:(NSDictionary *)params;
-+ (Promise *)updateUserWithParams:(NSDictionary *)params withID:(NSString *)userId;
++ (PMKPromise *)getUserWithId:(NSNumber *)userId;
++ (PMKPromise *)createUserWithParams:(NSDictionary *)params;
++ (PMKPromise *)updateUserWithParams:(NSDictionary *)params withID:(NSString *)userId;
 @end

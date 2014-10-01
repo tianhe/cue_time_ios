@@ -7,33 +7,33 @@
 //
 
 #import "JHGameNetworkHelper.h"
-#import "JHConstants.h"
+#import "CueTime-Swift.h"
 #import "JHNetworkHelper.h"
 
 @implementation JHGameNetworkHelper
 
-+ (Promise *)createGameWithParams:(NSDictionary *)params{
-    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games", kAPIBaseURL];
++ (PMKPromise *)createGameWithParams:(NSDictionary *)params{
+    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games", [JHConstants kAPIBaseURL]];
     return [JHNetworkHelper POST:gameAPIUrl parameters:params];
 }
 
-+ (Promise *)deleteGameWithID:(NSString*)gameId{
-    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/%@", kAPIBaseURL, gameId];
++ (PMKPromise *)deleteGameWithID:(NSString*)gameId{
+    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/%@", [JHConstants kAPIBaseURL], gameId];
     return [JHNetworkHelper DELETE:gameAPIUrl];
 }
 
-+ (Promise *)getUpcomingGames{
-    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/upcoming", kAPIBaseURL];
++ (PMKPromise *)getUpcomingGames{
+    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/upcoming", [JHConstants kAPIBaseURL]];
     return [JHNetworkHelper GET:gameAPIUrl];
 }
 
-+ (Promise *)getGoingGames{
-    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/going", kAPIBaseURL];
++ (PMKPromise *)getGoingGames{
+    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/going", [JHConstants kAPIBaseURL]];
     return [JHNetworkHelper GET:gameAPIUrl];
 }
 
-+ (Promise *)getOrganizingGames{
-    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/organizing", kAPIBaseURL];
++ (PMKPromise *)getOrganizingGames{
+    NSString *gameAPIUrl = [NSString stringWithFormat:@"http://%@/v1/games/organizing", [JHConstants kAPIBaseURL]];
      return [JHNetworkHelper GET:gameAPIUrl];
 }
 
